@@ -6,7 +6,7 @@ import { ImProfile } from "react-icons/im";
 import Profile_Img from "../public/headshot.jpeg";
 export default function Landing() {
   return (
-    <div className="h-screen bg-dark-grey  flex items-center">
+    <div className="h-screen bg-slate-900  flex items-center">
       <div className=" flex justify-between w-full max-w-6xl  mx-auto">
         <div className=" flex flex-col w-1/2  ">
           <h3 className=" text-light-emerald text-2xl mb-1">
@@ -21,19 +21,40 @@ export default function Landing() {
           <div className="mt-auto">
             <ul className="flex gap-4">
               <Link href="/">
-                <a className="border-2 border-light-emerald p-3">
-                  <FaLinkedinIn color="white" size={24} />
+                <a className="group ring-0 relative border-2 border-light-emerald p-3 focus:ring-0 focus:ring-offset-0">
+                  <span
+                    className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
+                  "
+                  ></span>
+                  <FaLinkedinIn
+                    className="relative z-10 text-white  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
+                    size={24}
+                  />
                 </a>
               </Link>
 
               <Link href="/">
-                <a className="border-2 border-light-emerald p-3">
-                  <FiGithub color="white" size={24} />
+                <a className="group relative border-2 border-light-emerald p-3 focus:ring-0 focus:ring-offset-0">
+                  <span
+                    className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
+                  "
+                  ></span>
+                  <FiGithub
+                    className="relative z-10 text-white  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
+                    size={24}
+                  />
                 </a>
               </Link>
               <Link href="/">
-                <a className="border-2 border-light-emerald p-3">
-                  <ImProfile color="white" size={24} />
+                <a className="group relative border-2 border-light-emerald p-3 ">
+                  <span
+                    className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
+                  "
+                  ></span>
+                  <ImProfile
+                    className="relative z-10 text-white  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
+                    size={24}
+                  />
                 </a>
               </Link>
             </ul>
