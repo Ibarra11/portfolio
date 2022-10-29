@@ -1,10 +1,21 @@
 import "../styles/globals.css";
 import Layout from "../components/Layout";
-import useSmoothScroll from "../hooks/useSmoothScroll";
+
+import { useEffect } from "react";
+
+import { useRouter } from "next/router";
 
 function MyApp({ Component, pageProps }) {
-  // const [currentSection, setCurrentSection] = useState("home");
-  useSmoothScroll();
+  const router = useRouter();
+
+  useEffect(() => {
+    router.events.on("hashChangeStart", () => {
+      document.documentElement.style.scrollBehavior = "smooth";
+    });
+    router.events.on("routeChangeStart", () => {
+      document.documentElement.style.scrollBehavior = "auto";
+    });
+  }, [router]);
 
   return (
     <Layout>

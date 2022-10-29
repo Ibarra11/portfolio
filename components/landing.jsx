@@ -6,7 +6,7 @@ import { ImProfile } from "react-icons/im";
 import Profile_Img from "../public/headshot.jpeg";
 export default function Landing() {
   return (
-    <section id="#home" className="h-screen bg-slate-900  flex items-center">
+    <section id="home" className="h-screen bg-slate-900  flex items-center">
       <div className=" flex justify-between w-full max-w-6xl  mx-auto">
         <div className=" flex flex-col w-1/2  ">
           <h3 className=" text-light-emerald text-2xl mb-1">

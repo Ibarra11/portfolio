@@ -1,47 +1,11 @@
-import { useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Audiophile_img from "../public/audiophile.png";
 import Moviespot_img from "../public/moviespot.png";
-import { FiGithub, FiHexagon, FiGlobe } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 export default function Projects({ onSectionEnter }) {
-  const ref = useRef();
-  // useEffect(() => {
-  //   let options = {
-  //     root: null,
-  //     // rootMargin: "820px",
-  //     threshold: 0,
-  //   };
-
-  //   let observer = new IntersectionObserver((e) => {
-  //     const { isIntersecting, boundingClientRect, intersectionRatio } = e[0];
-  //     const ratio = Math.floor(intersectionRatio * 100);
-  //     // console.log(e[0]);
-  //     // console.log(window.innerHeight);
-  //     // console.log(e[0]);
-  //     // console.log(e[0].boundingClientRect.y);
-  //     // console.log(rootBounds);
-  //     // console.log(intersectionRatio * 100);
-  //     // if (
-  //     //   isIntersecting &&
-  //     //   (boundingClientRect.y < 20) & (boundingClientRect.y > 0)
-  //     // ) {
-  //     //   console.log("scrolling Down");
-  //     //   onSectionEnter("projects");
-  //     // }
-
-  //     // if (
-  //     //   isIntersecting &&
-  //     //   boundingClientRect.y < 0 &&
-  //     //   Math.floor(intersectionRatio * 100) === 10
-  //     // ) {
-  //     //   onSectionEnter("projects");
-  //     // }
-  //   }, options);
-  //   observer.observe(ref.current);
-  // }, [onSectionEnter]);
   return (
-    <section ref={ref} id="projects" className=" bg-slate-800 py-24">
+    <section id="projects" className=" bg-slate-800 py-24">
       <div className="relative max-w-6xl mx-auto">
         <h2 className=" relative text-center text-white text-4xl mb-24">
           Projects
