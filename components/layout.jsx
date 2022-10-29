@@ -42,7 +42,7 @@ export default function Layout({ children }) {
   //   });
   // }, [setCurrentSection]);
   return (
-    <div className="min-h-full flex flex-col">
+    <div className="min-h-full flex flex-col scroll-smooth">
       <Header />
 
       <main className="flex flex-1 ">{children}</main>

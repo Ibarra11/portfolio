@@ -1,8 +1,10 @@
-import { useState, useEffect, useRef } from "react";
 import "../styles/globals.css";
 import Layout from "../components/Layout";
+import useSmoothScroll from "../hooks/useSmoothScroll";
+
 function MyApp({ Component, pageProps }) {
   // const [currentSection, setCurrentSection] = useState("home");
+  useSmoothScroll();
 
   return (
     <Layout>

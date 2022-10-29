@@ -57,7 +57,7 @@ export default function Header({ currentSection }) {
               </Link>
             </li>
             <li>
-              <Link href="#">
+              <Link href="#about">
                 <a
                   className={`p-3${isCurrentSection("about", currentSection)}`}
                 >
@@ -65,17 +65,9 @@ export default function Header({ currentSection }) {
                 </a>
               </Link>
             </li>
-            {/* <li>
-              <Link href="#">
-                <a
-                  className={`p-3${isCurrentSection("Skills", currentSection)}`}
-                >
-                  Skills
-                </a>
-              </Link>
-            </li> */}
+
             <li>
-              <Link href="#">
+              <Link href="#projects">
                 <a
                   className={`p-3${isCurrentSection(
                     "projects",
@@ -87,7 +79,7 @@ export default function Header({ currentSection }) {
               </Link>
             </li>
             <li>
-              <Link href="#">
+              <Link href="#contact">
                 <a
                   className={`p-3${isCurrentSection(
                     "contact",
