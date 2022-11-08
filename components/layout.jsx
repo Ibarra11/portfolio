@@ -41,8 +41,13 @@ export default function Layout({ children }) {
   //     }
   //   });
   // }, [setCurrentSection]);
+
+  useEffect(() => {
+    const header = document.querySelector("#header");
+    const logo = document.querySelector("#logo");
+  }, []);
   return (
-    <div className="min-h-full flex flex-col scroll-smooth">
+    <div className="min-h-full flex flex-col bg">
       <Header />
 
       <main className="flex flex-1 ">{children}</main>

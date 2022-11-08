@@ -4,14 +4,14 @@ import About from "../components/about";
 import Projects from "../components/projects";
 import Contact from "../components/contact";
 
-export default function Home({ onSectionEnter }) {
+export default function Home() {
   return (
     <div className="flex-1">
       <Head>Alan Ibarra&apos;s Portfolio</Head>
       <Landing />
-      <About onSectionEnter={onSectionEnter} />
-      <Projects onSectionEnter={onSectionEnter} />
-      <Contact onSectionEnter={onSectionEnter} />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }

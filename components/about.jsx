@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 import {
   SiTypescript,
   SiCss3,
@@ -7,51 +8,28 @@ import {
   SiNextdotjs,
   SiReact,
 } from "react-icons/si";
-export default function About({ onSectionEnter }) {
-  const ref = useRef();
-  // console.log(ref.current.offsetHeight);
-  // useEffect(() => {
-  //   const header = document.querySelector("#header");
-  //   console.log(header);
-  //   let options = {
-  //     // root: header,
-  //     // rootMargin: `${ref.current.offsetHeight * -1}px`,
-  //     threshold: [.1,.2,.3,.4, .5,.6, .7, .8, .9, 1.0]
-  //   };
-
-  //   let observer = new IntersectionObserver((e) => {
-  //     const { isIntersecting, boundingClientRect, intersectionRatio } = e[0];
-  //     const ratio = Math.floor(intersectionRatio * 100);
-  //     console.log(e);
-  //     // console.log(e[0]);
-  //     // console.log(e[0].boundingClientRect.y);
-  //     // console.log(rootBounds);
-  //     // console.log(intersectionRatio * 100);
-  //     // if (
-  //     //   isIntersecting &&
-  //     //   (boundingClientRect.y < 20) & (boundingClientRect.y > 0)
-  //     // ) {
-  //     //   console.log("scrolling Down");
-  //     //   onSectionEnter("about");
-  //     // }
-
-  //     // if (
-  //     //   isIntersecting &&
-  //     //   boundingClientRect.y < 0 &&
-  //     //   Math.floor(intersectionRatio * 100) === 10
-  //     // ) {
-  //     //   onSectionEnter("about");
-  //     // }
-  //   }, options);
-  //   observer.observe(ref.current);
-  // }, [onSectionEnter]);
+export default function About() {
+  const variants = {
+    initial: { opacity: 0, y: 20 },
+    animate: { opacity: 1, y: 0 },
+  };
   return (
-    <section id="about" ref={ref} className=" bg-slate-700 py-24">
-      <div className=" max-w-6xl mx-auto">
-        <h2 className="text-4xl text-black  mb-24 text-center">About Me</h2>
-        <div className="grid grid-cols-3 gap-10">
-          <div className="col-span-2">
-            <p className=" text-base text-dark-grey">
+    <section id="about" className=" bg-slate-100 py-24">
+      <motion.div
+        whileInView="animate"
+        transition={{ duration: 0.4 }}
+        initial="initial"
+        viewport={{ amount: 0.4, once: true }}
+        variants={variants}
+        className=" max-w-6xl mx-auto"
+      >
+        <div className="relative text-center">
+          <h2 className="text-4xl text- mb-12 text-center">About Me</h2>
+          <span className="absolute  left-1/2 bottom-0 -translate-x-1/2 translate-y-5 h-2 bg-dark-emerald w-16"></span>
+        </div>
+        <div className="grid grid-cols-3">
+          <div className="col-span-3">
+            <motion.p className=" text-lg text-dark-grey">
               Hi, Im Alan Ibarra, a frontend developer based out of Northern
               California. I am a first generation college graduate having
               graduated from CSU Stanislaus in the year 2018 with a bachelors of
@@ -69,30 +47,10 @@ export default function About({ onSectionEnter }) {
               something that I enjoy . Aside from that some of my personal
               hobbies include lifting weights, watching documentaries, and
               hanging out with my family.
-            </p>
-          </div>
-          <div className=" col-start-3 grid grid-cols-3">
-            <div className="w-20 h-20 bg-black inline-flex justify-center items-center  ">
-              <SiReact size={48} />
-            </div>
-            <div className=" w-20 h-20 inline-flex justify-center items-center bg-light-emerald ">
-              <SiTypescript size={48} />
-            </div>
-            <div className=" w-20 h-20 inline-flex justify-center items-center bg-light-emerald ">
-              <SiCss3 size={48} />
-            </div>
-            <div className=" w-20 h-20 inline-flex justify-center items-center bg-light-emerald ">
-              <SiTailwindcss size={48} />
-            </div>
-            <div className=" w-20 h-20 inline-flex justify-center items-center bg-light-emerald ">
-              <SiCypress size={48} />
-            </div>
-            <div className=" w-20 h-20 inline-flex justify-center items-center bg-light-emerald ">
-              <SiNextdotjs size={48} />
-            </div>
+            </motion.p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

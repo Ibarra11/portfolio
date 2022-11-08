@@ -14,7 +14,21 @@ body {
 .hexagon {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
+/* .bg {
+  background: linear-gradient(
+    90deg,
+    #09203f,
+    #142b4b,
+    #1e3757,
+    #284463,
+    #32506f,
+    #3d5d7c,
+    #486a88,
+    #537895
+  );
+} */
 
 .bg {
-  background-color: #253f59;
+  background-color: #0f172a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.42' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }

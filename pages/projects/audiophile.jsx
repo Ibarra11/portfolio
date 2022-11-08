@@ -4,7 +4,7 @@ import audiophile_img from "../../public/audiophile.png";
 
 export default function Audiophile() {
   return (
-    <div className="flex-1 pt-16 bg-slate-50">
+    <div className="flex-1 pt-1 bg">
       <Head>
         <title>Audiophile</title>
       </Head>
