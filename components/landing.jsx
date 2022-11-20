@@ -6,17 +6,20 @@ import { FiGithub, FiMenu } from "react-icons/fi";
 import Profile_Img from "../public/headshot.jpeg";
 export default function Landing() {
   return (
-    <section id="home" className="h-screen  bg-slate-900 flex items-center">
-      <div className=" flex justify-between w-full max-w-6xl  mx-auto ">
+    <section
+      id="home"
+      className="h-screen  bg-slate-900 flex items-center px-9 "
+    >
+      <div className="flex flex-col-reverse gap-8 md:gap-0 items-center md:flex-row md:justify-between md:items-stretch  w-full max-w-6xl  mx-auto ">
         <motion.div
           transition={{ staggerChildren: 0.5 }}
-          className=" flex flex-col w-1/2 "
+          className=" flex flex-col w-full sm:w-3/4  md:w-1/2 text-center md:text-start"
         >
           <motion.h3
             initial={{ opacity: 0, translateY: 32 }}
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.2, delay: 0.1 }}
-            className=" text-light-emerald text-2xl mb-1"
+            className=" text-light-emerald text-xl font-medium  md:text-2xl mb-1"
           >
             Frontend Developer
           </motion.h3>
@@ -24,7 +27,7 @@ export default function Landing() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.2 }}
-            className="text-white text-6xl mb-4 "
+            className="text-white text-5xl font-semibold  md:text-6xl mb-4 "
           >
             Alan Ibarra
           </motion.h1>
@@ -32,13 +35,13 @@ export default function Landing() {
             initial={{ opacity: 0, y: 32 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.2, delay: 0.3 }}
-            className=" text-xl  text-light-grey"
+            className="text-lg md:text-xl text-light-grey"
           >
             Web development for me is not a hobby, but a passion. Being able to
             take ideas and bring them to life is one of the most rewarding
             feelings.
           </motion.p>
-          <motion.div className="mt-auto flex gap-4">
+          <motion.div className=" mt-4 md:mt-auto flex gap-4 justify-center md:justify-start">
             <Link href="/">
               <motion.a
                 initial={{ opacity: 0, y: 32 }}
@@ -97,7 +100,7 @@ export default function Landing() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 0.5 }}
-          className="relative w-80 h-80 ml-auto rounded-full border-8 p-2 overflow-hidden border-light-emerald"
+          className="relative w-60 h-60 p-0  md:w-80 md:h-80 md:ml-auto rounded-full border-8 md:p-2 overflow-hidden border-light-emerald"
         >
           <Image
             layout="fill"
