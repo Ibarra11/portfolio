@@ -1,18 +1,21 @@
+import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { FiMenu } from "react-icons/fi";
 import Image from "next/image";
+import MobileMenu from "./MobileMenu";
 import brand from "../public/brand.png";
-import headshot from "../public/headshot.jpeg";
 export default function Header() {
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header
       id="header"
-      className="fixed h-16 top-0 w-full z-20 bg-black opacity-95 border-b-2 border-b-dark-emerald   "
+      className="fixed  top-0 w-full px-6 z-20 bg-black opacity-95   border-b-4 border-b-light-emerald   "
     >
-      <nav className="h-full">
-        <ul className="h-full max-w-6xl mx-auto flex items-center text-light-grey">
+      {isOpen && <MobileMenu isOpen={isOpen} handleOpenChange={setIsOpen} />}
+      <nav className="h-16">
+        <ul className="h-full max-w-6xl mx-auto flex items-center text-gray-200">
           <li>
             <Link
               href={`${router.pathname === "/" ? "#home" : "/#home"}`}
@@ -20,19 +23,32 @@ export default function Header() {
             >
               <a
                 id="logo"
-                className="relative p-3 pl-0 text-base text-white inline-flex items-center h-8 w-40 hover:text-dark-emerald duration-200"
+                className="relative inline-flex items-center h-8 w-40 outline-none  focus:ring-4  focus:ring-light-emerald"
               >
                 <Image src={brand} alt="home page" layout="fill" />
               </a>
             </Link>
           </li>
-          <div className="ml-auto flex gap-8">
+          {/* Hamburger Menu */}
+          <div className="ml-auto md:hidden">
+            <li>
+              <button
+                onClick={() => setIsOpen(true)}
+                className="text-gray-300 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
+              >
+                <FiMenu size={24} />
+              </button>
+            </li>
+          </div>
+          <div className="ml-auto hidden md:flex md:gap-8 ">
             <li>
               <Link
                 href={`${router.pathname === "/" ? "#home" : "/#home"}`}
                 scroll={false}
               >
-                <a className="p-3 hover:text-dark-emerald duration-200">Home</a>
+                <a className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald">
+                  Home
+                </a>
               </Link>
             </li>
             <li>
@@ -40,7 +56,7 @@ export default function Header() {
                 href={`${router.pathname === "/" ? "#about" : "/#about"}`}
                 scroll={false}
               >
-                <a className="p-3 hover:text-dark-emerald duration-200">
+                <a className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald">
                   About Me
                 </a>
               </Link>
@@ -51,7 +67,7 @@ export default function Header() {
                 href={`${router.pathname === "/" ? "#projects" : "/#projects"}`}
                 scroll={false}
               >
-                <a className="p-3 hover:text-dark-emerald duration-200">
+                <a className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald">
                   Projects
                 </a>
               </Link>
@@ -61,7 +77,7 @@ export default function Header() {
                 href={`${router.pathname === "/" ? "#contact" : "/#contact"}`}
                 scroll={false}
               >
-                <a className="p-3 hover:text-dark-emerald duration-200">
+                <a className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald">
                   Contact
                 </a>
               </Link>

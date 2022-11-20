@@ -14,7 +14,7 @@ export default function About() {
     animate: { opacity: 1, y: 0 },
   };
   return (
-    <section id="about" className=" bg-slate-100 py-24">
+    <section id="about" className=" bg-gray-100 py-24">
       <motion.div
         whileInView="animate"
         transition={{ duration: 0.4 }}
@@ -25,7 +25,7 @@ export default function About() {
       >
         <div className="relative text-center">
           <h2 className="text-4xl text- mb-12 text-center">About Me</h2>
-          <span className="absolute  left-1/2 bottom-0 -translate-x-1/2 translate-y-5 h-2 bg-dark-emerald w-16"></span>
+          <span className="absolute  left-1/2 bottom-0 -translate-x-1/2 translate-y-5 h-2 bg-light-emerald w-16"></span>
         </div>
         <div className="grid grid-cols-3">
           <div className="col-span-3">

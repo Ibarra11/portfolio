@@ -4,15 +4,15 @@ import audiophile_img from "../../public/audiophile.png";
 
 export default function Audiophile() {
   return (
-    <div className="flex-1 pt-1 bg">
+    <div className="flex-1 pt-16 bg-gray-100">
       <Head>
         <title>Audiophile</title>
       </Head>
 
       <div className="max-w-4xl mx-auto pt-9">
-        <div className="relative h-96">
+        <div className="relative h-96 p-2 shadow-lg">
           <Image
-            className="object-cover"
+            className="object-cover rounded-lg p-2"
             layout="fill"
             src={audiophile_img}
             alt="audiphile thumbnail"
@@ -20,7 +20,7 @@ export default function Audiophile() {
         </div>
 
         <section className="mb-8">
-          <h1 className="text-6xl text-center my-9">Audiophile</h1>
+          <h1 className="text-5xl text-center my-9">Audiophile</h1>
           <p className=" text-lg">
             Audiophile is a fictional ecommerce site for headphones that is one
             of the challenges provided by Frontend Mentor. It does not have a
@@ -32,13 +32,13 @@ export default function Audiophile() {
         <section className="mb-8">
           <h2 className="text-3xl mb-4">Built With</h2>
           <ul className="flex flex-wrap gap-2">
-            <li className=" bg-slate-200 p-2 rounded-lg">React</li>
-            <li className=" bg-slate-200 p-2 rounded-lg">TypeScript</li>
-            <li className=" bg-slate-200 p-2 rounded-lg">React Router</li>
-            <li className=" bg-slate-200 p-2 rounded-lg">Framer Motion</li>
-            <li className=" bg-slate-200 p-2 rounded-lg">Styled Components</li>
-            <li className=" bg-slate-200 p-2 rounded-lg">Cypress</li>
-            <li className=" bg-slate-200 p-2 rounded-lg">
+            <li className=" bg-gray-300 p-2 rounded-lg">React</li>
+            <li className=" bg-gray-300 p-2 rounded-lg">TypeScript</li>
+            <li className=" bg-gray-300 p-2 rounded-lg">React Router</li>
+            <li className=" bg-gray-300 p-2 rounded-lg">Framer Motion</li>
+            <li className=" bg-gray-300 p-2 rounded-lg">Styled Components</li>
+            <li className=" bg-gray-300 p-2 rounded-lg">Cypress</li>
+            <li className=" bg-gray-300 p-2 rounded-lg">
               Jest Testing Library
             </li>
           </ul>

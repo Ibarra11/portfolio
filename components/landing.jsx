@@ -2,8 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { FaLinkedinIn } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
-import { ImProfile } from "react-icons/im";
+import { FiGithub, FiMenu } from "react-icons/fi";
 import Profile_Img from "../public/headshot.jpeg";
 export default function Landing() {
   return (
@@ -17,7 +16,7 @@ export default function Landing() {
             initial={{ opacity: 0, translateY: 32 }}
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.2, delay: 0.1 }}
-            className=" text-dark-emerald text-2xl mb-1"
+            className=" text-light-emerald text-2xl mb-1"
           >
             Frontend Developer
           </motion.h3>
@@ -45,10 +44,10 @@ export default function Landing() {
                 initial={{ opacity: 0, y: 32 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, transition: 0.2 }}
-                className="group ring-0 relative border-2 border-dark-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
+                className="group ring-0 relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
               >
                 <span
-                  className="absolute top-0 left-0  bg-dark-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
+                  className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
                   "
                 ></span>
                 <FaLinkedinIn
@@ -63,10 +62,10 @@ export default function Landing() {
                 initial={{ opacity: 0, y: 32 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, transition: 0.2 }}
-                className="group relative border-2 border-dark-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
+                className="group relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
               >
                 <span
-                  className="absolute top-0 left-0  bg-dark-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
+                  className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
                   "
                 ></span>
                 <FiGithub
@@ -83,7 +82,7 @@ export default function Landing() {
                 className="group relative border-2 border-dark-emerald p-3 cursor-pointer "
               >
                 <span
-                  className="absolute top-0 left-0  bg-dark-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
+                  className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
                   "
                 ></span>
                 <ImProfile
@@ -98,7 +97,7 @@ export default function Landing() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 0.5 }}
-          className="relative w-80 h-80 ml-auto rounded-full border-8 p-2 overflow-hidden border-dark-emerald"
+          className="relative w-80 h-80 ml-auto rounded-full border-8 p-2 overflow-hidden border-light-emerald"
         >
           <Image
             layout="fill"
