@@ -19,13 +19,12 @@ export default function Contact() {
           <div className="col-span-3 text-center md:col-span-1 self-center">
             <h2 className="text-gray-700 text-4xl mb-2">Get in Touch</h2>
             <p className=" text-gray-700 text-lg">
-              {" "}
               Feel free to contact me regarding any questions
             </p>
           </div>
           <form
             onSubmit={sendEmail}
-            className="border-2 border-gren-400 col-span-3 md:col-span-2 grid grid-cols-2 gap-6"
+            className="col-span-3 md:col-span-2 grid grid-cols-2 gap-6"
           >
             <div className="col-span-2 sm:col-span-1 flex flex-col gap-1 ">
               <label className="text-grey-700 text-base mr-2" htmlFor="name">

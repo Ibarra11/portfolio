@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="fixed  top-0 w-full px-9 z-20 bg-black opacity-95   border-b-4 border-b-light-emerald   "
+      className="fixed  top-0 w-full px-9 z-20 bg-black opacity-95   border-b-2 border-b-light-emerald   "
     >
       {isOpen && <MobileMenu isOpen={isOpen} handleOpenChange={setIsOpen} />}
       <nav className="h-16">
