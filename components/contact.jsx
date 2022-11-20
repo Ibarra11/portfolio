@@ -13,10 +13,10 @@ export default function Contact() {
     });
   }
   return (
-    <section className="py-24 bg-gray-100" id="contact">
+    <section className="py-16 md:py-24 bg-gray-10 px-9" id="contact">
       <div className="relative max-w-6xl  mx-auto">
         <div className="grid grid-cols-3 gap-12 ">
-          <div className=" col-span-1 self-center">
+          <div className="col-span-3 text-center md:col-span-1 self-center">
             <h2 className="text-gray-700 text-4xl mb-2">Get in Touch</h2>
             <p className=" text-gray-700 text-lg">
               {" "}
@@ -25,9 +25,9 @@ export default function Contact() {
           </div>
           <form
             onSubmit={sendEmail}
-            className="col-span-2 grid grid-cols-2 gap-6"
+            className="border-2 border-gren-400 col-span-3 md:col-span-2 grid grid-cols-2 gap-6"
           >
-            <div className=" col-span-1 flex flex-col gap-1 ">
+            <div className="col-span-2 sm:col-span-1 flex flex-col gap-1 ">
               <label className="text-grey-700 text-base mr-2" htmlFor="name">
                 Name
               </label>
@@ -38,7 +38,7 @@ export default function Contact() {
                 required
               />
             </div>
-            <div className="col-span-1 flex flex-col  gap-1">
+            <div className="col-span-2 sm:col-span-1 flex flex-col  gap-1">
               <label className="text-grey-700 text-base mr-2" htmlFor="email">
                 Email
               </label>

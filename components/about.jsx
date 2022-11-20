@@ -1,20 +1,12 @@
-import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import {
-  SiTypescript,
-  SiCss3,
-  SiTailwindcss,
-  SiCypress,
-  SiNextdotjs,
-  SiReact,
-} from "react-icons/si";
+
 export default function About() {
   const variants = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
   };
   return (
-    <section id="about" className=" bg-gray-100 py-24">
+    <section id="about" className=" bg-gray-100 py-16 md:py-24 px-9">
       <motion.div
         whileInView="animate"
         transition={{ duration: 0.4 }}
