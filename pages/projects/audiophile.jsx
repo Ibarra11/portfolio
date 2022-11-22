@@ -4,15 +4,15 @@ import audiophile_img from "../../public/audiophile.png";
 
 export default function Audiophile() {
   return (
-    <div className="flex-1 pt-16 bg-gray-100">
+    <div className="flex-1 pt-16 bg-gray-200">
       <Head>
         <title>Audiophile</title>
       </Head>
 
       <div className="max-w-4xl mx-auto pt-9">
-        <div className="relative h-96 p-2 shadow-lg">
+        <div className="relative h-96 shadow-lg">
           <Image
-            className="object-cover rounded-lg p-2"
+            className="object-cover object-top rounded-lg"
             layout="fill"
             src={audiophile_img}
             alt="audiphile thumbnail"

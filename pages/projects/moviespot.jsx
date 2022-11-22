@@ -4,7 +4,7 @@ import moviespot_img from "../../public/moviespot.png";
 import useSearch_snippet from "../../public/useSearch_snippet.png";
 export default function MovieSpot() {
   return (
-    <div className="flex-1 pt-16 bg-gray-800">
+    <div className="flex-1 pt-16 bg-gray-200">
       <Head>
         <title>MovieSpot</title>
       </Head>
@@ -12,7 +12,7 @@ export default function MovieSpot() {
       <div className="max-w-4xl mx-auto pt-9">
         <div className="relative h-96 shadow-lg">
           <Image
-            className="object-cover rounded-lg"
+            className="object-cover object-top rounded-lg"
             layout="fill"
             src={moviespot_img}
             alt="moviespot thumbnail"
@@ -20,7 +20,7 @@ export default function MovieSpot() {
         </div>
         <section className="mb-8 text-gray-800">
           <h1 className="text-5xl text-center my-9">MovieSpot</h1>
-          <p className="text-l">
+          <p className="text-lg">
             MovieSpot is one of the challenges provided by Frontend Mentor. It
             is a entertainment web app showcasing the most popular movies and tv
             shows. In order to use the application users have to signup or

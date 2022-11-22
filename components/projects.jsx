@@ -94,7 +94,7 @@ export default function Projects() {
               src={"/moviespot.png"}
               alt="a screenshot of the moviespots website"
               layout="fill"
-              className="object-cover  "
+              className="object-cover object-top  "
             />
           </motion.div>
         </div>
@@ -169,9 +169,9 @@ export default function Projects() {
             className="relative h-80 row-start-1 md:row-start-auto  col-span-3 md:col-span-2  rounded-lg overflow-hidden"
           >
             <Image
-              src={"/audiophile.png"}
+              src={"/audiophile-2.png"}
               alt="a screenshot of the audiophile website"
-              className="object-cover  "
+              className=" object-cover object-top"
               layout="fill"
             />
           </motion.div>
