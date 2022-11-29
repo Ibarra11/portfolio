@@ -83,7 +83,7 @@ export default function Contact() {
               ></textarea>
             </div>
             <div className=" col-span-2 flex justify-end">
-              <button className=" px-10 text-bae  rounded-md text-white py-3 bg-light-emerald hover:bg-dark-emerald focus:bg-dark-emerald duration-200">
+              <button className=" px-10 text-base w-full sm:w-auto  rounded-md text-white py-3 bg-light-emerald hover:bg-dark-emerald focus:bg-dark-emerald duration-200">
                 Send
               </button>
             </div>
