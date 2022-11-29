@@ -3,7 +3,7 @@ import * as Toast from "@radix-ui/react-toast";
 import { TfiClose } from "react-icons/tfi";
 import { TbCircleCheck } from "react-icons/tb";
 export default function Contact() {
-  const [isToastOpen, setIsToastOpen] = useState(true);
+  const [isToastOpen, setIsToastOpen] = useState(false);
   async function sendEmail(event) {
     const { name, email, subject, message } = event.target.elements;
     event.preventDefault();
@@ -96,7 +96,7 @@ export default function Contact() {
 
 const EmailToast = ({ isOpen, handleOpenChange }) => {
   return (
-    <Toast.Provider duration={500000} swipeDirection="left">
+    <Toast.Provider swipeDirection="left">
       <Toast.Root
         className="absolute  flex items-center h-10 left-1/2  -translate-x-1/2  w-3/4 -top-2  -translate-y-full  sm:w-auto  sm:left-0 sm:top-full sm:bottom-0 sm:translate-x-0 sm:translate-y-0  sm:h-12 px-4 py-2 border-l-[6px] border-l-light-emerald  bg-white shadow-md"
         open={isOpen}
