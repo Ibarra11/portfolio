@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import { FiGithub, FiGlobe } from "react-icons/fi";
 import audiophile_img from "../../public/audiophile.png";
 
 export default function Audiophile() {
@@ -20,7 +22,21 @@ export default function Audiophile() {
         </div>
 
         <section className="mb-8">
-          <h1 className="text-5xl text-center my-9">Audiophile</h1>
+          <div className="relative">
+            <h1 className="text-5xl text-center my-9 ">Audiophile</h1>
+            <div className="absolute h-full  flex items-center top-0 right-0">
+              <Link href="https://audiophile-ruby.vercel.app/">
+                <a className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
+                  <FiGlobe size={20} />
+                </a>
+              </Link>
+              <Link href="https://github.com/Ibarra11/audiophile">
+                <a className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
+                  <FiGithub size={20} />
+                </a>
+              </Link>
+            </div>
+          </div>
           <p className=" text-lg">
             Audiophile is a fictional ecommerce site for headphones that is one
             of the challenges provided by Frontend Mentor. It does not have a

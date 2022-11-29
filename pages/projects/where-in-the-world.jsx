@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { FiGithub, FiGlobe } from "react-icons/fi";
+
 export default function WhereInTheWorld() {
   return (
     <div className="flex-1 pt-16 bg-gray-200">
@@ -18,7 +20,21 @@ export default function WhereInTheWorld() {
           />
         </div>
         <section className="mb-8 text-gray-800">
-          <h1 className="text-5xl text-center my-9">Where in the world?</h1>
+          <div className="relative">
+            <h1 className="text-5xl text-center my-9 ">Where in the world?</h1>
+            <div className="absolute h-full  flex items-center top-0 right-0">
+              <Link href="https://rest-countries-hgak.vercel.app/">
+                <a className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
+                  <FiGlobe size={20} />
+                </a>
+              </Link>
+              <Link href="https://github.com/Ibarra11/Rest_Countries">
+                <a className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
+                  <FiGithub size={20} />
+                </a>
+              </Link>
+            </div>
+          </div>
           <p className="text-lg">
             A web application that uses the REST countries API. The goal of the
             app was to utilize the new Next.js 13 features like server

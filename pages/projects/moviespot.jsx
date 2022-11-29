@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
+import { FiGithub, FiGlobe } from "react-icons/fi";
 import moviespot_img from "../../public/moviespot.png";
 import useSearch_snippet from "../../public/useSearch_snippet.png";
 export default function MovieSpot() {
@@ -19,7 +21,22 @@ export default function MovieSpot() {
           />
         </div>
         <section className="mb-8 text-gray-800">
-          <h1 className="text-5xl text-center my-9">MovieSpot</h1>
+          <div className="relative">
+            <h1 className="text-5xl text-center my-9 ">MovieSpot</h1>
+            <div className="absolute h-full  flex items-center top-0 right-0">
+              <Link href="https://flix-ibarra11.vercel.app/">
+                <a className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
+                  <FiGlobe size={20} />
+                </a>
+              </Link>
+              <Link href="https://github.com/Ibarra11/Movie_App">
+                <a className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
+                  <FiGithub size={20} />
+                </a>
+              </Link>
+            </div>
+          </div>
+
           <p className="text-lg">
             MovieSpot is one of the challenges provided by Frontend Mentor. It
             is a entertainment web app showcasing the most popular movies and tv
