@@ -15,7 +15,7 @@ export default function Projects() {
   };
   return (
     <section id="projects" className="bg-gray-800 py-16 md:py-24 px-9">
-      <div className="relative max-w-6xl mx-auto">
+      <div className="relative max-w-6xl mx-auto w-full border-2 border-red-500">
         <div className="relative text-center">
           <h2 className="text-4xl mb-12 text-center text-white">Projects</h2>
           <span className=" absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-5 h-2 bg-light-emerald w-16"></span>

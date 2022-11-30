@@ -5,7 +5,7 @@ import { FiGithub, FiGlobe } from "react-icons/fi";
 
 export default function WhereInTheWorld() {
   return (
-    <div className="flex-1 pt-16 bg-gray-200">
+    <div className="flex-1 pt-16 pb-8 px-9 =bg-gray-200">
       <Head>
         <title>Where in the world?</title>
       </Head>
@@ -21,8 +21,10 @@ export default function WhereInTheWorld() {
         </div>
         <section className="mb-8 text-gray-800">
           <div className="relative">
-            <h1 className="text-5xl text-center my-9 ">Where in the world?</h1>
-            <div className="absolute h-full  flex items-center top-0 right-0">
+            <h1 className="text-5xl text-center mb-14 mt-9 sm:mb-9">
+              Where in the world?
+            </h1>
+            <div className="absolute flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
               <Link href="https://rest-countries-hgak.vercel.app/">
                 <a className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
                   <FiGlobe size={20} />
