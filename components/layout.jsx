@@ -1,13 +1,12 @@
-import { createContext, useRef, forwardRef, useEffect } from "react";
-import { useState } from "react";
-import Head from "next/head";
 import Header from "./header";
 import Footer from "./footer";
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
-    <div className="min-h-full flex flex-col bg">
-      <Header />
+    <div className="relative min-h-full flex flex-col overflow-hidden">
+      <div className="relative border-2 border-red">
+        <Header />
+      </div>
 
       <main className="flex flex-1 ">{children}</main>
 

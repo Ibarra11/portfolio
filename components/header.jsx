@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
+import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
 import { FiMenu } from "react-icons/fi";
 import Image from "next/image";
@@ -11,9 +12,14 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="fixed  top-0 w-full px-9 z-20 bg-black opacity-95   border-b-2 border-b-light-emerald   "
+      className={`
+      fixed top-0 px-9  z-20 bg-black opacity-95 border-b-2 border-b-light-emerald
+      ${isOpen ? "modal" : "inset-x-0"}
+      `}
     >
-      {isOpen && <MobileMenu isOpen={isOpen} handleOpenChange={setIsOpen} />}
+      <AnimatePresence>
+        {isOpen && <MobileMenu isOpen={isOpen} handleOpenChange={setIsOpen} />}
+      </AnimatePresence>
       <nav className="h-16">
         <ul className="h-full max-w-6xl mx-auto flex items-center text-gray-200">
           <li>
@@ -31,14 +37,12 @@ export default function Header() {
           </li>
           {/* Hamburger Menu */}
           <div className="ml-auto md:hidden">
-            <li>
-              <button
-                onClick={() => setIsOpen(true)}
-                className="text-gray-300 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-              >
-                <FiMenu size={24} />
-              </button>
-            </li>
+            <button
+              onClick={() => setIsOpen(true)}
+              className="text-gray-300 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
+            >
+              <FiMenu size={24} />
+            </button>
           </div>
           <div className="ml-auto hidden md:flex md:gap-8 ">
             <li>
