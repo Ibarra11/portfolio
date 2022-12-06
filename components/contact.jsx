@@ -1,7 +1,13 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import * as Toast from "@radix-ui/react-toast";
-import { TfiClose } from "react-icons/tfi";
 import { TbCircleCheck } from "react-icons/tb";
+
+const variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export default function Contact() {
   const [isToastOpen, setIsToastOpen] = useState(false);
   async function sendEmail(event) {
@@ -28,13 +34,25 @@ export default function Contact() {
           <EmailToast isOpen={isToastOpen} handleOpenChange={setIsToastOpen} />
         )}
         <div className="grid grid-cols-3 gap-12 ">
-          <div className="col-span-3 text-center md:col-span-1 self-center">
+          <motion.div
+            variants={variants}
+            whileInView="visible"
+            initial="hidden"
+            viewport={{ amount: 0.4, once: true }}
+            transition={{ duration: 0.4 }}
+            className="col-span-3 text-center md:col-span-1 self-center"
+          >
             <h2 className="text-gray-700 text-4xl mb-2">Get in Touch</h2>
             <p className=" text-gray-700 text-lg">
               Feel free to contact me regarding any questions
             </p>
-          </div>
-          <form
+          </motion.div>
+          <motion.form
+            variants={variants}
+            whileInView="visible"
+            initial="hidden"
+            viewport={{ amount: 0.4, once: true }}
+            transition={{ duration: 0.4 }}
             onSubmit={sendEmail}
             className="col-span-3 md:col-span-2 grid grid-cols-2 gap-6"
           >
@@ -87,7 +105,7 @@ export default function Contact() {
                 Send
               </button>
             </div>
-          </form>
+          </motion.form>
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
 import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
@@ -9,12 +9,13 @@ import brand from "../public/brand.png";
 export default function Header() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <header
       id="header"
       className={`
-      fixed top-0 px-9  z-20 bg-black opacity-95 border-b-2 border-b-light-emerald
-      ${isOpen ? "modal" : "inset-x-0"}
+      fixed top-0 inset-x-0 px-9  z-20 bg-black opacity-95 border-b-2 border-b-light-emerald
+ 
       `}
     >
       <AnimatePresence>
