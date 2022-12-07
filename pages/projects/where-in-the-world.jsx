@@ -29,6 +29,7 @@ export default function WhereInTheWorld() {
                 aria-label="website for where in the world"
                 className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://rest-countries-hgak.vercel.app/"
+                target="_blank"
               >
                 <FiGlobe size={20} />
               </Link>
@@ -36,6 +37,7 @@ export default function WhereInTheWorld() {
                 aria-label="github for where in the world"
                 className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://github.com/Ibarra11/Rest_Countries"
+                target="_blank"
               >
                 <FiGithub size={20} />
               </Link>
@@ -111,6 +113,7 @@ export default function WhereInTheWorld() {
               <Link
                 className=" border-b-2 border-dark-emerald "
                 href="https://www.joshwcomeau.com/react/dark-mode/"
+                target="_blank"
               >
                 The Quest for the Perfect Dark Mode
               </Link>

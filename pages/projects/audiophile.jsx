@@ -30,6 +30,7 @@ export default function Audiophile() {
                 aria-label="website for audiophile"
                 className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://audiophile-ruby.vercel.app/"
+                target="_blank"
               >
                 <FiGlobe size={20} />
               </Link>
@@ -37,6 +38,7 @@ export default function Audiophile() {
                 aria-label="Github for audiophile"
                 className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://github.com/Ibarra11/audiophile"
+                target="_blank"
               >
                 <FiGithub size={20} />
               </Link>

@@ -44,7 +44,8 @@ export default function Landing() {
             <Link
               className="group ring-0 relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
               aria-label="linkedin"
-              href="/"
+              href="https://www.linkedin.com/in/alanjibarra/"
+              target="_blank"
             >
               <span
                 className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
@@ -59,7 +60,8 @@ export default function Landing() {
             <Link
               className="group relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
               aria-label="github"
-              href="/"
+              href="https://github.com/Ibarra11"
+              target="_blank"
             >
               <span
                 className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300

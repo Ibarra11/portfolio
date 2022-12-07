@@ -66,12 +66,14 @@ export default function Projects() {
               <Link
                 className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://flix-ibarra11.vercel.app/"
+                target="_blank"
               >
                 <FiGlobe size={20} />
               </Link>
               <Link
                 className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://github.com/Ibarra11/Movie_App"
+                target="_blank"
               >
                 <FiGithub size={20} />
               </Link>
@@ -146,12 +148,14 @@ export default function Projects() {
               <Link
                 className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://audiophile-ruby.vercel.app/"
+                target="_blank"
               >
                 <FiGlobe size={20} />
               </Link>
               <Link
                 className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://github.com/Ibarra11/audiophile"
+                target="_blank"
               >
                 <FiGithub size={20} />
               </Link>
@@ -220,12 +224,14 @@ export default function Projects() {
               <Link
                 className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://rest-countries-hgak.vercel.app/"
+                target="_blank"
               >
                 <FiGlobe size={20} />
               </Link>
               <Link
                 className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://github.com/Ibarra11/Rest_Countries"
+                target="_blank"
               >
                 <FiGithub size={20} />
               </Link>
