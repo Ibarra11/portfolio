@@ -77,11 +77,10 @@ export default function Landing() {
           animate="animate"
           variants={variants}
           transition={{ duration: 0.4 }}
-          className="relative w-60 h-60 p-0  md:w-80 md:h-80 md:ml-auto rounded-full border-8 md:p-2 overflow-hidden border-light-emerald"
+          className="relative w-60 h-60 p-0  md:w-80 md:h-80 md:ml-auto rounded-full border-8  overflow-hidden border-light-emerald"
         >
           <Image
-            layout="fill"
-            className="object-cover"
+            className="w-full h-full object-cover"
             src={Profile_Img}
             alt="profile picture"
           />

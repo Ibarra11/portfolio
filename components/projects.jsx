@@ -1,15 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
-
 import { motion } from "framer-motion";
 import { FiGithub, FiGlobe } from "react-icons/fi";
+import MOVIESPOT_IMG from "../public/moviespot.png";
+import AUDIOPHILE_IMG from "../public/audiophile-2.png";
+import WHEREINTHEWORLD_IMG from "../public/where-in-the-world.png";
+
+const variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export default function Projects() {
-  const variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
   return (
     <section id="projects" className="bg-gray-800 py-16 md:py-24 px-9">
       <div className="relative max-w-6xl mx-auto">
@@ -84,10 +86,9 @@ export default function Projects() {
             className="relative h-80 row-start-1 md:row-start-auto  col-span-3 md:col-span-2  rounded-lg overflow-hidden"
           >
             <Image
-              src={"/moviespot.png"}
+              src={MOVIESPOT_IMG}
               alt="a screenshot of the moviespots website"
-              layout="fill"
-              className="object-cover object-top  "
+              className="object-cover object-top w-full h-full"
             />
           </motion.div>
         </div>
@@ -165,10 +166,9 @@ export default function Projects() {
             className="relative h-80 row-start-1 md:row-start-auto  col-span-3 md:col-span-2  rounded-lg overflow-hidden"
           >
             <Image
-              src={"/audiophile-2.png"}
+              src={AUDIOPHILE_IMG}
               alt="a screenshot of the audiophile website"
-              className=" object-cover object-top"
-              layout="fill"
+              className="object-cover object-top w-full h-full"
             />
           </motion.div>
         </div>
@@ -240,10 +240,9 @@ export default function Projects() {
             className="relative h-80 row-start-1 md:row-start-auto  col-span-3 md:col-span-2  rounded-lg overflow-hidden"
           >
             <Image
-              src={"/country_grid3.png"}
+              src={WHEREINTHEWORLD_IMG}
               alt="a screenshot of the where in the world website"
-              className="object-cover  "
-              layout="fill"
+              className="object-cover object-top w-full h-full"
             />
           </motion.div>
         </div>

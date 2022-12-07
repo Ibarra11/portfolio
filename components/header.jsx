@@ -29,7 +29,7 @@ export default function Header() {
               href={`${router.pathname === "/" ? "#home" : "/#home"}`}
               scroll={false}
             >
-              <Image src={brand} alt="home page" layout="fill" />
+              <Image src={brand} alt="home page" className="w-full h-full" />
             </Link>
           </li>
           {/* Hamburger Menu */}
