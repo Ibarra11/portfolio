@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { FiGithub, FiGlobe } from "react-icons/fi";
-
+import WHEREINTHEWORLD_IMG from "../../public/where-in-the-world.png";
 export default function WhereInTheWorld() {
   return (
     <div className="flex-1 pt-16 pb-8 px-9 =bg-gray-200">
@@ -15,7 +15,7 @@ export default function WhereInTheWorld() {
           <Image
             className="object-cover object-top rounded-lg"
             layout="fill"
-            src="/where-in-the-world.png"
+            src={WHEREINTHEWORLD_IMG}
             alt="where in the world website screenshot"
           />
         </div>

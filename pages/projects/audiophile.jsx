@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { FiGithub, FiGlobe } from "react-icons/fi";
-import audiophile_img from "../../public/audiophile.png";
+import AUDIOPHILE_IMG from "../../public/audiophile-2.png";
 
 export default function Audiophile() {
   return (
@@ -16,7 +16,7 @@ export default function Audiophile() {
           <Image
             className="object-cover object-top rounded-lg"
             layout="fill"
-            src={audiophile_img}
+            src={AUDIOPHILE_IMG}
             alt="audiphile thumbnail"
           />
         </div>

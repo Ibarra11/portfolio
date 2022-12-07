@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { FiGithub, FiGlobe } from "react-icons/fi";
-import moviespot_img from "../../public/moviespot.png";
+import MOVIESPOT_IMG from "../../public/moviespot.png";
 import useSearch_snippet from "../../public/useSearch_snippet.png";
 export default function MovieSpot() {
   return (
@@ -16,7 +16,7 @@ export default function MovieSpot() {
           <Image
             className="object-cover object-top rounded-lg"
             layout="fill"
-            src={moviespot_img}
+            src={MOVIESPOT_IMG}
             alt="moviespot thumbnail"
           />
         </div>
