@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { Raleway } from "@next/font/google";
-import Layout from "../components/Layout";
+import Layout from "../components/layout";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
 const raleway_font = Raleway({ subsets: ["latin"] });
