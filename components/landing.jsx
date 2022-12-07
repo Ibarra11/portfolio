@@ -41,36 +41,34 @@ export default function Landing() {
             feelings.
           </p>
           <motion.div className=" mt-4 md:mt-auto flex gap-4 justify-center md:justify-start">
-            <Link href="/">
-              <motion.a
-                aria-label="linkedin"
-                className="group ring-0 relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
-              >
-                <span
-                  className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
+            <Link
+              className="group ring-0 relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
+              aria-label="linkedin"
+              href="/"
+            >
+              <span
+                className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
                   "
-                ></span>
-                <FaLinkedinIn
-                  className="relative z-10 text-white  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
-                  size={24}
-                />
-              </motion.a>
+              ></span>
+              <FaLinkedinIn
+                className="relative z-10 text-white  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
+                size={24}
+              />
             </Link>
 
-            <Link href="/">
-              <motion.a
-                className="group relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
-                aria-label="github"
-              >
-                <span
-                  className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
+            <Link
+              className="group relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
+              aria-label="github"
+              href="/"
+            >
+              <span
+                className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
                   "
-                ></span>
-                <FiGithub
-                  className="relative z-10 text-white  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
-                  size={24}
-                />
-              </motion.a>
+              ></span>
+              <FiGithub
+                className="relative z-10 text-white  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
+                size={24}
+              />
             </Link>
           </motion.div>
         </motion.div>

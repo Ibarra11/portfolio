@@ -1,5 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { TfiClose } from "react-icons/tfi";
 
 import { useRouter } from "next/router";

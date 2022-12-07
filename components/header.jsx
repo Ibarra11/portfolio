@@ -25,15 +25,11 @@ export default function Header() {
         <ul className="h-full max-w-6xl mx-auto flex items-center text-gray-200">
           <li>
             <Link
+              className="relative inline-flex items-center h-8 w-40 outline-none  focus:ring-4  focus:ring-light-emerald"
               href={`${router.pathname === "/" ? "#home" : "/#home"}`}
               scroll={false}
             >
-              <a
-                id="logo"
-                className="relative inline-flex items-center h-8 w-40 outline-none  focus:ring-4  focus:ring-light-emerald"
-              >
-                <Image src={brand} alt="home page" layout="fill" />
-              </a>
+              <Image src={brand} alt="home page" layout="fill" />
             </Link>
           </li>
           {/* Hamburger Menu */}
@@ -48,43 +44,39 @@ export default function Header() {
           <div className="ml-auto hidden md:flex md:gap-8 ">
             <li>
               <Link
+                className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                 href={`${router.pathname === "/" ? "#home" : "/#home"}`}
                 scroll={false}
               >
-                <a className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald">
-                  Home
-                </a>
+                Home
               </Link>
             </li>
             <li>
               <Link
+                className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                 href={`${router.pathname === "/" ? "#about" : "/#about"}`}
                 scroll={false}
               >
-                <a className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald">
-                  About Me
-                </a>
+                About Me
               </Link>
             </li>
 
             <li>
               <Link
+                className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                 href={`${router.pathname === "/" ? "#projects" : "/#projects"}`}
                 scroll={false}
               >
-                <a className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald">
-                  Projects
-                </a>
+                Projects
               </Link>
             </li>
             <li>
               <Link
+                className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                 href={`${router.pathname === "/" ? "#contact" : "/#contact"}`}
                 scroll={false}
               >
-                <a className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald">
-                  Contact
-                </a>
+                Contact
               </Link>
             </li>
           </div>

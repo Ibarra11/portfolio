@@ -25,15 +25,19 @@ export default function WhereInTheWorld() {
               Where in the world?
             </h1>
             <div className="absolute flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
-              <Link href="https://rest-countries-hgak.vercel.app/">
-                <a className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGlobe size={20} />
-                </a>
+              <Link
+                aria-label="website for where in the world"
+                className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://rest-countries-hgak.vercel.app/"
+              >
+                <FiGlobe size={20} />
               </Link>
-              <Link href="https://github.com/Ibarra11/Rest_Countries">
-                <a className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGithub size={20} />
-                </a>
+              <Link
+                aria-label="github for where in the world"
+                className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://github.com/Ibarra11/Rest_Countries"
+              >
+                <FiGithub size={20} />
               </Link>
             </div>
           </div>
@@ -104,10 +108,11 @@ export default function WhereInTheWorld() {
             <p className="text-base">
               Upon looking through the internet for possible solutions to this
               issue I found an article by Josh Comeau called{" "}
-              <Link href="https://www.joshwcomeau.com/react/dark-mode/">
-                <a className=" border-b-2 border-dark-emerald ">
-                  The Quest for the Perfect Dark Mode.{" "}
-                </a>
+              <Link
+                className=" border-b-2 border-dark-emerald "
+                href="https://www.joshwcomeau.com/react/dark-mode/"
+              >
+                The Quest for the Perfect Dark Mode
               </Link>
               In his article, he was able to solve this issue by adding a script
               before the app renders. The script is blocking meaning that the

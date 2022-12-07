@@ -34,8 +34,15 @@ export default function Projects() {
               MovieSpot is an entertainment web app showcasing the most popular
               Movies and TV-series.
             </p>
-            <h4 className="hidden md:block text-white text-lg">Features</h4>
+            <h4 className="hidden md:block text-white text-lg">Highlights</h4>
             <ul className="hidden md:block text-light-grey">
+              <li className="flex items-center gap-2">
+                <span
+                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                  aria-hidden="true"
+                ></span>
+                <span>Full Stack</span>
+              </li>
               <li className="flex items-center gap-2">
                 <span
                   className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
@@ -43,41 +50,28 @@ export default function Projects() {
                 ></span>
                 <span>Authentication</span>
               </li>
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Users can filter movies by keyword</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Users can bookmark movies</span>
-              </li>
             </ul>
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
-              <Link href="/projects/moviespot">
-                <a
-                  className="
+              <Link
+                className="
                 inline-flex bg-slate-900 text-white rounded-3xl  justify-center items-center px-5 h-12
                 hover:bg-light-emerald focus:bg-light-emerald duration-200
                 "
-                >
-                  View Details
-                </a>
+                href="/projects/moviespot"
+              >
+                View Details
               </Link>
-              <Link href="https://flix-ibarra11.vercel.app/">
-                <a className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGlobe size={20} />
-                </a>
+              <Link
+                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://flix-ibarra11.vercel.app/"
+              >
+                <FiGlobe size={20} />
               </Link>
-              <Link href="https://github.com/Ibarra11/Movie_App">
-                <a className="flex items-center  text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGithub size={20} />
-                </a>
+              <Link
+                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://github.com/Ibarra11/Movie_App"
+              >
+                <FiGithub size={20} />
               </Link>
             </div>
           </motion.div>
@@ -114,7 +108,7 @@ export default function Projects() {
             <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-0">
               Audiophile is a multi page ecommerce site for headphones.
             </p>
-            <h4 className="hidden md:block text-white text-lg">Features</h4>
+            <h4 className="hidden md:block text-white text-lg">Highlights</h4>
             <ul className="hidden md:block text-light-grey">
               <li className="flex items-center gap-2">
                 <span
@@ -139,25 +133,26 @@ export default function Projects() {
               </li>
             </ul>
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
-              <Link href="/projects/audiophile">
-                <a
-                  className="
+              <Link
+                className="
                 inline-flex bg-slate-900 text-white rounded-3xl  justify-center items-center px-5 h-12
                 hover:bg-light-emerald focus:bg-light-emerald duration-200
                 "
-                >
-                  View Details
-                </a>
+                href="/projects/audiophile"
+              >
+                View Details
               </Link>
-              <Link href="https://audiophile-ruby.vercel.app/">
-                <a className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGlobe size={20} />
-                </a>
+              <Link
+                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://audiophile-ruby.vercel.app/"
+              >
+                <FiGlobe size={20} />
               </Link>
-              <Link href="https://github.com/Ibarra11/audiophile">
-                <a className="flex items-center  text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGithub size={20} />
-                </a>
+              <Link
+                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://github.com/Ibarra11/audiophile"
+              >
+                <FiGithub size={20} />
               </Link>
             </div>
           </motion.div>
@@ -185,52 +180,54 @@ export default function Projects() {
               Where in the world?
             </h3>
             <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-0">
-              Where in the world text
+              Where in the world displays information about all the countries in
+              the world provided by the REST countries API.
             </p>
-            <h4 className="hidden md:block text-white text-lg">Features</h4>
+            <h4 className="hidden md:block text-white text-lg">Highlights</h4>
             <ul className="hidden md:block text-light-grey">
               <li className="flex items-center gap-2">
                 <span
                   className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
                   aria-hidden="true"
                 ></span>
-                <span>Shopping Cart</span>
+                <span>Next.js 13</span>
               </li>
               <li className="flex items-center gap-2">
                 <span
                   className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
                   aria-hidden="true"
                 ></span>
-                <span>Checkout Process</span>
+                <span>Server Components</span>
               </li>
               <li className="flex items-center gap-2">
                 <span
                   className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
                   aria-hidden="true"
                 ></span>
-                <span>Page Animations</span>
+                <span>Dark Mode / Light Mode</span>
               </li>
             </ul>
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
-              <Link href="/projects/where-in-the-world">
-                <a
-                  className="
+              <Link
+                className="
                 inline-flex bg-slate-900 text-white rounded-3xl  justify-center items-center px-5 h-12
                 hover:bg-light-emerald focus:bg-light-emerald duration-200
                 "
-                >
-                  View Details
-                </a>
+                href="/projects/where-in-the-world"
+              >
+                View Details
               </Link>
-              <Link href="https://rest-countries-hgak.vercel.app/">
-                <a className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGlobe size={20} />
-                </a>
+              <Link
+                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://rest-countries-hgak.vercel.app/"
+              >
+                <FiGlobe size={20} />
               </Link>
-              <Link href="https://github.com/Ibarra11/Rest_Countries">
-                <a className="flex items-center  text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGithub size={20} />
-                </a>
+              <Link
+                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://github.com/Ibarra11/Rest_Countries"
+              >
+                <FiGithub size={20} />
               </Link>
             </div>
           </motion.div>

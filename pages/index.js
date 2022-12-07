@@ -7,7 +7,9 @@ import Contact from "../components/contact";
 export default function Home() {
   return (
     <div className="flex-1">
-      <Head>Alan Ibarra&apos;s Portfolio</Head>
+      <Head>
+        <title>Alan Ibarra&apos;s Portfolio</title>
+      </Head>
       <Landing />
       <About />
       <Projects />

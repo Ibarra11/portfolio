@@ -26,15 +26,19 @@ export default function MovieSpot() {
               MovieSpot
             </h1>
             <div className="absolute flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
-              <Link href="https://flix-ibarra11.vercel.app/">
-                <a className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGlobe size={20} />
-                </a>
+              <Link
+                aria-label="Moviespot website"
+                className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://flix-ibarra11.vercel.app/"
+              >
+                <FiGlobe size={20} />
               </Link>
-              <Link href="https://github.com/Ibarra11/Movie_App">
-                <a className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald">
-                  <FiGithub size={20} />
-                </a>
+              <Link
+                aria-label="Github repository for moviesport"
+                className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                href="https://github.com/Ibarra11/Movie_App"
+              >
+                <FiGithub size={20} />
               </Link>
             </div>
           </div>

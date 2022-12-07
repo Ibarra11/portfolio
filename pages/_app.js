@@ -1,13 +1,11 @@
 import "../styles/globals.css";
+import { Raleway } from "@next/font/google";
 import Layout from "../components/Layout";
-
 import { useEffect } from "react";
-
 import { useRouter } from "next/router";
-
+const raleway_font = Raleway({ subsets: ["latin"] });
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-
   useEffect(() => {
     router.events.on("hashChangeStart", () => {
       document.documentElement.style.scrollBehavior = "smooth";
@@ -18,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   }, [router]);
 
   return (
-    <Layout>
+    <Layout font={raleway_font}>
       <Component {...pageProps} />
     </Layout>
   );

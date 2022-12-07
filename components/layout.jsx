@@ -1,9 +1,11 @@
 import Header from "./header";
 import Footer from "./footer";
 
-export default function Layout({ children }) {
+export default function Layout({ children, font }) {
   return (
-    <div className="relative min-h-full flex flex-col overflow-hidden">
+    <div
+      className={`relative min-h-full flex flex-col overflow-hidden ${font.className}`}
+    >
       <div className="relative border-2 border-red">
         <Header />
       </div>
