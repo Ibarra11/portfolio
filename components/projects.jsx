@@ -20,37 +20,44 @@ export default function Projects() {
           <span className=" absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-5 h-2 bg-light-emerald w-16"></span>
         </div>
         {/* Start of MovieSpot */}
-        <div className="relative grid grid-cols-3 gap-6 md:gap-9 mb-16">
+        <div className="relative grid grid-cols-3 items-center gap-6 mb-16 md:gap-9">
           <motion.div
             variants={variants}
             whileInView="visible"
             initial="hidden"
             viewport={{ amount: 0.4, once: true }}
             transition={{ duration: 0.4 }}
-            className="col-span-3 w-full sm:w-3/m-4 mx-auto md:w-full md:mx-0   md:col-span-1 flex flex-col gap-2"
+            className="col-span-3  w-full sm:w-3/4 mx-auto md:w-full md:mx-0 md:col-span-1 flex flex-col gap-2"
           >
-            <h3 className="text-2xl text-white text-center md:text-start">
-              Movie Spot
+            <h3 className="text-2xl mb-1 text-white text-center md:text-start">
+              MovieSpot
             </h3>
-            <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-0">
+            <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-1">
               MovieSpot is an entertainment web app showcasing the most popular
               Movies and TV-series.
             </p>
             <h4 className="hidden md:block text-white text-lg">Highlights</h4>
-            <ul className="hidden md:block text-light-grey">
+            <ul className="hidden space-y-1 md:block text-light-grey mb-4">
               <li className="flex items-center gap-2">
                 <span
                   className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
                   aria-hidden="true"
                 ></span>
-                <span>Full Stack</span>
+                <span>Authentication System</span>
               </li>
               <li className="flex items-center gap-2">
                 <span
                   className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
                   aria-hidden="true"
                 ></span>
-                <span>Authentication</span>
+                <span>End to end typesafety</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <span
+                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                  aria-hidden="true"
+                ></span>
+                <span>Protected Routes</span>
               </li>
             </ul>
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
@@ -85,34 +92,34 @@ export default function Projects() {
             whileInView="visible"
             viewport={{ amount: 0.4, once: true }}
             transition={{ duration: 0.4 }}
-            className="relative h-80 row-start-1 md:row-start-auto  col-span-3 md:col-span-2  rounded-lg overflow-hidden"
+            className="relative h-80 md:h-96 row-start-1 md:row-start-auto col-span-3 md:col-span-2 overflow-hidden rounded-lg"
           >
             <Image
               src={MOVIESPOT_IMG}
               alt="a screenshot of the moviespots website"
-              className="object-cover object-top w-full h-full"
+              className=" object-cover object-top w-full h-full"
             />
           </motion.div>
         </div>
         {/* End of MovieSport */}
         {/* Start of AudioPhile */}
-        <div className="relative grid grid-cols-3 gap-6 md:gap-9 mb-16">
+        <div className="relative  grid grid-cols-3 items-center gap-6 mb-16 md:gap-9">
           <motion.div
             variants={variants}
             whileInView="visible"
             initial="hidden"
             viewport={{ amount: 0.4, once: true }}
             transition={{ duration: 0.4 }}
-            className="col-span-3 w-full sm:w-3/m-4 mx-auto md:w-full md:mx-0   md:col-span-1 flex flex-col gap-2"
+            className="col-span-3  w-full sm:w-3/4 mx-auto md:w-full md:mx-0 md:col-span-1 flex flex-col gap-2"
           >
-            <h3 className="text-2xl text-white text-center md:text-start">
+            <h3 className="text-2xl mb-1 text-white text-center md:text-start">
               Audiophile
             </h3>
-            <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-0">
+            <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-1">
               Audiophile is a multi page ecommerce site for headphones.
             </p>
-            <h4 className="hidden md:block text-white text-lg">Highlights</h4>
-            <ul className="hidden md:block text-light-grey">
+            <h4 className="hidden md:block text-white text-lg">Highlights</h4>{" "}
+            <ul className="hidden md:block text-light-grey space-y-1 mb-4">
               <li className="flex items-center gap-2">
                 <span
                   className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
@@ -163,11 +170,11 @@ export default function Projects() {
           </motion.div>
           <motion.div
             variants={variants}
-            whileInView="visible"
             initial="hidden"
+            whileInView="visible"
             viewport={{ amount: 0.4, once: true }}
             transition={{ duration: 0.4 }}
-            className="relative h-80 row-start-1 md:row-start-auto  col-span-3 md:col-span-2  rounded-lg overflow-hidden"
+            className="relative h-80 md:h-96 row-start-1 md:row-start-auto col-span-3 md:col-span-2 overflow-hidden rounded-lg"
           >
             <Image
               src={AUDIOPHILE_IMG}
@@ -178,17 +185,24 @@ export default function Projects() {
         </div>
         {/* end of Audiophile */}
         {/* Start of Where in the world? */}
-        <div className="relative grid grid-cols-3 gap-6 md:gap-9">
-          <motion.div className="col-span-3 w-full sm:w-3/m-4 mx-auto md:w-full md:mx-0   md:col-span-1 flex flex-col gap-2">
-            <h3 className="text-2xl text-white text-center md:text-start">
+        <div className="relative grid grid-cols-3 items-center gap-6 mb-16 md:gap-9">
+          <motion.div
+            variants={variants}
+            whileInView="visible"
+            initial="hidden"
+            viewport={{ amount: 0.4, once: true }}
+            transition={{ duration: 0.4 }}
+            className="col-span-3  w-full sm:w-3/4 mx-auto md:w-full md:mx-0 md:col-span-1 flex flex-col gap-2"
+          >
+            <h3 className="text-2xl mb-1 text-white text-center md:text-start">
               Where in the world?
             </h3>
-            <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-0">
+            <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-1">
               Where in the world displays information about all the countries in
               the world provided by the REST countries API.
             </p>
             <h4 className="hidden md:block text-white text-lg">Highlights</h4>
-            <ul className="hidden md:block text-light-grey">
+            <ul className="hidden space-y-1 md:block text-light-grey mb-4">
               <li className="flex items-center gap-2">
                 <span
                   className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
@@ -239,11 +253,11 @@ export default function Projects() {
           </motion.div>
           <motion.div
             variants={variants}
-            whileInView="visible"
             initial="hidden"
+            whileInView="visible"
             viewport={{ amount: 0.4, once: true }}
             transition={{ duration: 0.4 }}
-            className="relative h-80 row-start-1 md:row-start-auto  col-span-3 md:col-span-2  rounded-lg overflow-hidden"
+            className="relative h-80 md:h-96 row-start-1 md:row-start-auto col-span-3 md:col-span-2 overflow-hidden rounded-lg"
           >
             <Image
               src={WHEREINTHEWORLD_IMG}

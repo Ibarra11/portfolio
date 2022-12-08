@@ -30,6 +30,7 @@ export default function MovieSpot() {
                 aria-label="Moviespot website"
                 className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://flix-ibarra11.vercel.app/"
+                target="_blank"
               >
                 <FiGlobe size={20} />
               </Link>
@@ -37,6 +38,7 @@ export default function MovieSpot() {
                 aria-label="Github repository for moviesport"
                 className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
                 href="https://github.com/Ibarra11/Movie_App"
+                target="_blank"
               >
                 <FiGithub size={20} />
               </Link>
@@ -71,7 +73,6 @@ export default function MovieSpot() {
           <h2 className="text-3xl mb-6">What I Learned</h2>
           <div className="mb-4 ">
             <h3 className="text-2xl mb-3">Deployment</h3>
-
             <p className="text-base">
               I had issues dealing with different environments when the app went
               in production. In development, I was using a development
@@ -82,19 +83,15 @@ export default function MovieSpot() {
               running in production or development and set a variable to it and
               the API calls would use this variable as the base to the api call.
             </p>
-          </div>
-          <div className="mb-4">
-            <h3 className="text-2xl mb-3">Proudction Build</h3>
-
-            <p className="text-base">
-              I had issues dealing with different environments when the app went
-              in production. In development, I was using a development
-              environment variable as a base URL for my API calls. When the app
-              was in production and made API calls it was using the development
-              environment variable, which would result in the API call failing.
-              To resolve this, I just determined whether or not the app was
-              running in production or development and set a variable to it and
-              the API calls would use this variable as the base to the api call.
+            <p>
+              I also ran into issues during the static generation of my pages
+              because in the _app page I was making an API call to an endpoint
+              to determine whether or not the user had a valid session. During
+              static generation the server is not up yet so you can't make API
+              calls during this time. To workaround this, I used a state
+              variable to track whether the component was mounted or not. This
+              just bypassed the static generation constraints, which might not
+              be the best approach.
             </p>
           </div>
 
