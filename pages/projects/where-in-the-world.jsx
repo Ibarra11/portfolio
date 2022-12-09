@@ -5,7 +5,7 @@ import { FiGithub, FiGlobe } from "react-icons/fi";
 import WHEREINTHEWORLD_IMG from "../../public/where-in-the-world.png";
 export default function WhereInTheWorld() {
   return (
-    <div className="flex-1 pt-16 pb-8 px-9 =bg-gray-200">
+    <div className="flex-1 pt-16 pb-8 px-9 bg-slate-800">
       <Head>
         <title>Where in the world?</title>
       </Head>
@@ -19,12 +19,12 @@ export default function WhereInTheWorld() {
             alt="where in the world website screenshot"
           />
         </div>
-        <section className="mb-8 text-gray-800">
+        <section className="mb-8">
           <div className="relative">
-            <h1 className="text-5xl text-center mb-14 mt-9 sm:mb-9">
+            <h1 className="text-5xl text-gray-100 text-center mb-14 mt-9 sm:mb-9">
               Where in the world?
             </h1>
-            <div className="absolute flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
+            <div className="absolute text-gray-300 flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
               <Link
                 aria-label="website for where in the world"
                 className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
@@ -43,28 +43,36 @@ export default function WhereInTheWorld() {
               </Link>
             </div>
           </div>
-          <p className="text-lg">
+          <p className="text-lg text-gray-300">
             A web application that uses the REST countries API. The goal of the
             app was to utilize the new Next.js 13 features like server
             components and the new app directory;
           </p>
         </section>
         <section className="mb-8">
-          <h2 className="text-3xl mb-4">Built With</h2>
+          <h2 className="text-2xl text-gray-100 mb-4">Built With</h2>
           <ul className="flex flex-wrap gap-2">
-            <li className=" bg-gray-300 p-2 rounded-lg">React</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">TypeScript</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">Next.js</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">TailwindCSS</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">SWR</li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              React
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              TypeScript
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              Next.js
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              TailwindCSS
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">SWR</li>
           </ul>
         </section>
         <section className="mb-8">
-          <h2 className="text-3xl mb-6">What I Learned</h2>
-          <div className="mb-4 ">
-            <h3 className="text-2xl mb-3">Server Components</h3>
+          <h2 className="text-2xl text-gray-100 mb-6">What I Learned</h2>
+          <div className="mb-4">
+            <h3 className="text-xl text-gray-100 mb-3">Server Components</h3>
 
-            <p className="text-base mb-4">
+            <p className="text-base text-gray-300 mb-4">
               My first thought when I was building this app was that I was going
               to mostly use server components. However, I soon realized that if
               the component needs to be interactive, then it can&apos;t be used
@@ -76,7 +84,7 @@ export default function WhereInTheWorld() {
               result, I made the grid a client component, which now can have
               state and be interactive.
             </p>
-            <p className="text-base">
+            <p className="text-base text-gray-300">
               I was able to use server components on the individual countries
               detail page. With the new Next.js api folder the getStaticPaths
               and getStaticParams API&apos;s are removed. Instead they provide a
@@ -89,9 +97,9 @@ export default function WhereInTheWorld() {
             </p>
           </div>
           <div className="mb-4">
-            <h3 className="text-2xl mb-3">Dark Mode</h3>
+            <h3 className="text-xl text-gray-100 mb-3">Dark Mode</h3>
 
-            <p className="text-base mb-4">
+            <p className="text-base text-gray-300 mb-4">
               I was able to implement dark mode, but there was a flash of the
               wrong colors depending on the users preference or what they had
               chosen on the app. For instance, if the users has a dark
@@ -107,7 +115,7 @@ export default function WhereInTheWorld() {
               way of adding dark mode is not the best user experience because
               they see a flash of content changing.
             </p>
-            <p className="text-base">
+            <p className="text-base text-gray-300">
               Upon looking through the internet for possible solutions to this
               issue I found an article by Josh Comeau called{" "}
               <Link

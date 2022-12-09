@@ -21,7 +21,7 @@ export default function Landing() {
       id="home"
       className="h-screen  bg-slate-900 flex items-center px-9 "
     >
-      <div className="flex flex-col-reverse gap-8 md:gap-0 items-center md:flex-row md:justify-between md:items-stretch  w-full max-w-6xl  mx-auto ">
+      <div className="flex  flex-col-reverse gap-8 items-center max-w-6xl mx-auto md:gap-0  md:flex-row md:justify-between ">
         <motion.div
           variants={variants}
           initial="initial"
@@ -29,18 +29,17 @@ export default function Landing() {
           transition={{ duration: 0.4 }}
           className=" flex flex-col w-full sm:w-3/4  md:w-1/2 text-center md:text-start"
         >
-          <h3 className=" text-light-emerald text-xl font-medium  md:text-2xl mb-1">
+          <h3 className=" text-light-emerald text-xl font-medium md:text-2xl mb-1">
             Frontend Developer
           </h3>
           <h1 className="text-white text-5xl font-semibold  md:text-6xl mb-4 ">
             Alan Ibarra
           </h1>
           <p className="text-lg md:text-xl text-light-grey">
-            Web development for me is not a hobby, but a passion. Being able to
-            take ideas and bring them to life is one of the most rewarding
-            feelings.
+            Being able to take ideas and bring them to life is one of the most
+            rewarding feelings.
           </p>
-          <motion.div className=" mt-4 md:mt-auto flex gap-4 justify-center md:justify-start">
+          <div className="mt-4  flex gap-4 justify-center md:justify-start">
             <Link
               className="group ring-0 relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
               aria-label="linkedin"
@@ -56,12 +55,10 @@ export default function Landing() {
                 size={24}
               />
             </Link>
-
             <Link
               className="group relative border-2 border-light-emerald p-3 cursor-pointer focus:ring-0 focus:ring-offset-0"
               aria-label="github"
               href="https://github.com/Ibarra11"
-              target="_blank"
             >
               <span
                 className="absolute top-0 left-0  bg-light-emerald  h-full w-full scale-x-0 origin-left duration-150 group-hover:scale-x-100  group-hover:duration-300 group-focus:scale-x-100 group-focus:duration-300
@@ -72,9 +69,9 @@ export default function Landing() {
                 size={24}
               />
             </Link>
-          </motion.div>
+          </div>
         </motion.div>
-        <motion.div
+        <div
           initial="initial"
           animate="animate"
           variants={variants}
@@ -86,7 +83,7 @@ export default function Landing() {
             src={Profile_Img}
             alt="profile picture"
           />
-        </motion.div>
+        </div>
       </div>
     </section>
   );

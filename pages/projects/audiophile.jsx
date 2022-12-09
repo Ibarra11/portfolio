@@ -6,7 +6,7 @@ import AUDIOPHILE_IMG from "../../public/audiophile-2.png";
 
 export default function Audiophile() {
   return (
-    <div className="flex-1 pt-16 pb-8 px-9  bg-gray-200">
+    <div className="flex-1 pt-16 pb-8 px-9 bg-slate-800">
       <Head>
         <title>Audiophile</title>
       </Head>
@@ -20,12 +20,12 @@ export default function Audiophile() {
             alt="audiphile thumbnail"
           />
         </div>
-        <section className="mb-8 text-gray-800">
+        <section className="mb-8">
           <div className="relative">
-            <h1 className="text-5xl text-center mb-14 mt-9 sm:mb-9 ">
+            <h1 className="text-5xl text-gray-100 text-center mb-14 mt-9 sm:mb-9 ">
               Audiophile
             </h1>
-            <div className="absolute flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
+            <div className="absolute text-gray-300 flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
               <Link
                 aria-label="website for audiophile"
                 className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
@@ -44,7 +44,7 @@ export default function Audiophile() {
               </Link>
             </div>
           </div>
-          <p className=" text-lg">
+          <p className=" text-lg text-gray-300">
             Audiophile is a fictional ecommerce site for headphones that is one
             of the challenges provided by Frontend Mentor. It does not have a
             backend, but it does keep track of the users purchases in the cart
@@ -53,24 +53,36 @@ export default function Audiophile() {
           </p>
         </section>
         <section className="mb-8">
-          <h2 className="text-3xl mb-4">Built With</h2>
+          <h2 className="text-2xl text-gray-100 mb-4">Built With</h2>
           <ul className="flex flex-wrap gap-2">
-            <li className=" bg-gray-300 p-2 rounded-lg">React</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">TypeScript</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">React Router</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">Framer Motion</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">Styled Components</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">Cypress</li>
-            <li className=" bg-gray-300 p-2 rounded-lg">
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              React
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              TypeScript
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              React Router
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              Framer Motion
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              Styled Components
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
+              Cypress
+            </li>
+            <li className=" bg-slate-900 text-gray-300 p-2 rounded-lg">
               Jest Testing Library
             </li>
           </ul>
         </section>
         <section className="mb-8">
-          <h2 className="text-3xl mb-6">What I Learned</h2>
+          <h2 className="text-2xl text-gray-100 mb-6">What I Learned</h2>
           <div className="mb-4">
-            <h3 className=" text-2xl mb-2">Framer Motion</h3>
-            <p className="text-base">
+            <h3 className=" text-xl text-gray-100 mb-2">Framer Motion</h3>
+            <p className="text-base text-gray-300">
               I learned how to use Framer Motion to animate page transitions and
               the modal. Framer motion makes it very easy to animate pages based
               on when they mount and unmount. Essentially, the initial state for
@@ -82,9 +94,9 @@ export default function Audiophile() {
             </p>
           </div>
           <div className="mb-4">
-            <h3 className="text-2xl mb-4">Context</h3>
+            <h3 className="text-xl text-gray-100 mb-4">Context</h3>
 
-            <p className="text-base">
+            <p className="text-base text-gray-300">
               I utilized context for this project in order to prevent prop
               drilling. I had global state, the shopping cart, which some
               components needed to add/remove items. Instead of having to pass
@@ -95,8 +107,8 @@ export default function Audiophile() {
           </div>
 
           <div className="mb-4">
-            <h3 className="text-2xl mb-4">Testing</h3>
-            <p className="text-base">
+            <h3 className="text-xl text-gray-100 mb-4">Testing</h3>
+            <p className="text-base text-gray-300">
               For testing, I used Cypress and Jest Testing Library. I used Jest
               Testing Library for unit testing, in this case it was the
               incrementing/decrementing items before you add them to the cart. I
