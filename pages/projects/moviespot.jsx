@@ -100,8 +100,8 @@ export default function MovieSpot() {
               I also ran into issues during the static generation of my pages
               because in the _app page I was making an API call to an endpoint
               to determine whether or not the user had a valid session. During
-              static generation the server is not up yet so you can't make API
-              calls during this time. To workaround this, I used a state
+              static generation the server is not up yet so you can&apos;t make
+              API calls during this time. To workaround this, I used a state
               variable to track whether the component was mounted or not. This
               just bypassed the static generation constraints, which might not
               be the best approach.
