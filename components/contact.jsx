@@ -1,19 +1,36 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-import * as Toast from "@radix-ui/react-toast";
-import { TbCircleCheck } from "react-icons/tb";
+import { motion, useMotionValue } from "framer-motion";
 
 const variants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
 };
 
+const EmailButtonVariants = {
+  idle: {
+    opacity: 1,
+    borderRadius: 0,
+    borderRadius: "8px",
+    width: 120,
+    height: 48,
+  },
+  pending: {
+    opacity: 0.75,
+    borderRadius: 0,
+    borderRadius: "8px",
+    width: 120,
+    height: 48,
+  },
+  success: { opacity: 1, borderRadius: "50%", width: 64, height: 64 },
+};
+
 export default function Contact() {
-  const [isToastOpen, setIsToastOpen] = useState(false);
+  const [emailStatus, setEmailStatus] = useState("idle");
   async function sendEmail(event) {
     const { name, email, subject, message } = event.target.elements;
     event.preventDefault();
     try {
+      setEmailStatus("pending");
       const res = await fetch("/api/contact", {
         method: "POST",
         body: JSON.stringify({
@@ -23,16 +40,18 @@ export default function Contact() {
           message: message.value,
         }),
       });
-      setIsToastOpen(true);
+      setEmailStatus("success");
       event.target.reset();
-    } catch (e) {}
+      setTimeout(() => {
+        setEmailStatus("idle");
+      }, 2000);
+    } catch (e) {
+      setEmailStatus("idle");
+    }
   }
   return (
-    <section className="py-16 md:py-24 bg-gray-100 px-9" id="contact">
+    <section className="py-16 md:py-24   w- bg-gray-100 px-9" id="contact">
       <div className="relative max-w-6xl  mx-auto">
-        {isToastOpen && (
-          <EmailToast isOpen={isToastOpen} handleOpenChange={setIsToastOpen} />
-        )}
         <div className="grid grid-cols-3 gap-12 ">
           <motion.div
             variants={variants}
@@ -100,10 +119,23 @@ export default function Contact() {
                 required
               ></textarea>
             </div>
-            <div className=" col-span-2 flex justify-end">
-              <button className=" px-10 text-base w-full sm:w-auto  rounded-md text-white py-3 bg-light-emerald hover:bg-dark-emerald focus:bg-dark-emerald duration-200">
-                Send
-              </button>
+            <div className="relative col-span-2">
+              <motion.button
+                variants={EmailButtonVariants}
+                initial={false}
+                animate={emailStatus}
+                whileHover={{
+                  backgroundColor: "var(--dark-emerald)",
+                  transition: { duration: 0.25 },
+                }}
+                transition={{ duration: 0.5, type: "tween", ease: "backInOut" }}
+                className="absolute right-0 text-base text-gray-100  bg-light-emerald"
+                disabled={
+                  emailStatus === "pending" || emailStatus === "fulfilled"
+                }
+              >
+                {emailStatus === "success" ? <CheckIcon /> : <span>Send</span>}
+              </motion.button>
             </div>
           </motion.form>
         </div>
@@ -112,25 +144,23 @@ export default function Contact() {
   );
 }
 
-const EmailToast = ({ isOpen, handleOpenChange }) => {
+function CheckIcon(props) {
   return (
-    <Toast.Provider swipeDirection="left">
-      <Toast.Root
-        className="absolute  flex items-center h-10 left-1/2  -translate-x-1/2  w-3/4 -top-2  -translate-y-full  sm:w-auto  sm:left-0 sm:top-full sm:bottom-0 sm:translate-x-0 sm:translate-y-0  sm:h-12 px-4 py-2 border-l-[6px] border-l-light-emerald  bg-white shadow-md"
-        open={isOpen}
-        onOpenChange={handleOpenChange}
-      >
-        <Toast.Description className="flex items-center gap-4">
-          <div className="text-light-emerald text-2xl sm:text-3xl  lg:text-4xl">
-            <TbCircleCheck />
-          </div>
-
-          <p className="text-sm sm:text-base text-gray-700">
-            Email has been sent successfully.
-          </p>
-        </Toast.Description>
-      </Toast.Root>
-      <Toast.Viewport className="ToastViewport" />
-    </Toast.Provider>
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+      <motion.path
+        {...props}
+        initial={{ pathLength: 0, opacity: 0 }}
+        animate={{ pathLength: 1, opacity: 1 }}
+        transition={{
+          type: "tween",
+          ease: "easeOut",
+          delay: 0.25,
+          duration: 0.25,
+        }}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5 13l4 4L19 7"
+      ></motion.path>
+    </svg>
   );
-};
+}
