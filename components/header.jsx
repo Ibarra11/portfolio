@@ -33,7 +33,7 @@ export default function Header() {
             </Link>
           </li>
           {/* Hamburger Menu */}
-          <div aria-label="open mobile menu" className="ml-auto md:hidden">
+          <li aria-label="open mobile menu" className="ml-auto md:hidden">
             <button
               onClick={() => setIsOpen(true)}
               className="text-gray-300 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
@@ -41,46 +41,50 @@ export default function Header() {
               <FiMenu size={24} />
               <div className=" sr-only">open mobile menu</div>
             </button>
-          </div>
-          <div className="ml-auto hidden md:flex md:gap-8 ">
-            <li>
-              <Link
-                className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                href={`${router.pathname === "/" ? "#home" : "/#home"}`}
-                scroll={false}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                href={`${router.pathname === "/" ? "#about" : "/#about"}`}
-                scroll={false}
-              >
-                About Me
-              </Link>
-            </li>
+          </li>
+          <li className="ml-auto hidden md:block ">
+            <ul className="flex gap-8">
+              <li>
+                <Link
+                  className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
+                  href={`${router.pathname === "/" ? "#home" : "/#home"}`}
+                  scroll={false}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
+                  href={`${router.pathname === "/" ? "#about" : "/#about"}`}
+                  scroll={false}
+                >
+                  About Me
+                </Link>
+              </li>
 
-            <li>
-              <Link
-                className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                href={`${router.pathname === "/" ? "#projects" : "/#projects"}`}
-                scroll={false}
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                href={`${router.pathname === "/" ? "#contact" : "/#contact"}`}
-                scroll={false}
-              >
-                Contact
-              </Link>
-            </li>
-          </div>
+              <li>
+                <Link
+                  className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
+                  href={`${
+                    router.pathname === "/" ? "#projects" : "/#projects"
+                  }`}
+                  scroll={false}
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
+                  href={`${router.pathname === "/" ? "#contact" : "/#contact"}`}
+                  scroll={false}
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>

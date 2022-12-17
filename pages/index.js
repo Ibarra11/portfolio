@@ -9,7 +9,6 @@ export default function Home() {
     <div className="flex-1">
       <Head>
         <title>Alan Ibarra&apos;s Portfolio</title>
-        <html lang="en" />
       </Head>
       <Landing />
       <About />
