@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { Raleway } from "@next/font/google";
+import Head from "next/head";
 import Layout from "../components/layout";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
