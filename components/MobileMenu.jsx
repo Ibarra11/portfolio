@@ -94,7 +94,7 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                   </motion.li>
                 </motion.ul>
                 <Dialog.Close
-                  arai-label="close navigation"
+                  arai-label="close mobile menu"
                   className="absolute top-4 right-4 p-2 text-gray-200 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                 >
                   <TfiClose size={32} />

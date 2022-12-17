@@ -33,12 +33,13 @@ export default function Header() {
             </Link>
           </li>
           {/* Hamburger Menu */}
-          <div className="ml-auto md:hidden">
+          <div aria-label="open mobile menu" className="ml-auto md:hidden">
             <button
               onClick={() => setIsOpen(true)}
               className="text-gray-300 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
             >
               <FiMenu size={24} />
+              <div className=" sr-only">open mobile menu</div>
             </button>
           </div>
           <div className="ml-auto hidden md:flex md:gap-8 ">
