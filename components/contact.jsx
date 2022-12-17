@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import clsx from "clsx";
 
 const variants = {
   hidden: { opacity: 0, y: 20 },
@@ -80,7 +81,10 @@ export default function Contact() {
                 Name
               </label>
               <input
-                className="w-full bg-gray-300 rounded-lg py-2.5 px-2"
+                className={clsx(
+                  "w-full bg-gray-300 rounded-lg py-2.5 px-2 duration-200 outline-none",
+                  "focus:ring-4 focus:ring-light-emerald"
+                )}
                 id="name"
                 type="text"
                 required
@@ -91,7 +95,10 @@ export default function Contact() {
                 Email
               </label>
               <input
-                className="w-full bg-gray-300 rounded-lg py-2.5 px-2"
+                className={clsx(
+                  "w-full bg-gray-300 rounded-lg py-2.5 px-2 duration-200 outline-none",
+                  "focus:ring-4 focus:ring-light-emerald"
+                )}
                 id="email"
                 type="email"
                 required
@@ -102,7 +109,10 @@ export default function Contact() {
                 Subject
               </label>
               <input
-                className="w-full bg-gray-300 rounded-lg py-2.5 px-2"
+                className={clsx(
+                  "w-full bg-gray-300 rounded-lg py-2.5 px-2 duration-200 outline-none",
+                  "focus:ring-4 focus:ring-light-emerald"
+                )}
                 id="subject"
                 type="text"
                 required
@@ -113,7 +123,10 @@ export default function Contact() {
                 Message
               </label>
               <textarea
-                className="w-full bg-gray-300 rounded-lg py-2.5 px-2"
+                className={clsx(
+                  "w-full bg-gray-300 rounded-lg py-2.5 px-2 duration-200 outline-none",
+                  "focus:ring-4 focus:ring-light-emerald"
+                )}
                 rows={6}
                 id="message"
                 required
@@ -124,12 +137,18 @@ export default function Contact() {
                 variants={EmailButtonVariants}
                 initial={false}
                 animate={emailStatus}
+                whileFocus={{
+                  backgroundColor: "var(--dark-emerald)",
+                  transition: { duration: 0.25 },
+                }}
                 whileHover={{
                   backgroundColor: "var(--dark-emerald)",
                   transition: { duration: 0.25 },
                 }}
                 transition={{ duration: 0.5, type: "tween", ease: "backInOut" }}
-                className="absolute right-0 text-base text-gray-100  bg-light-emerald"
+                className={clsx(
+                  "absolute right-0 text-base text-gray-100  bg-light-emerald outline-none"
+                )}
                 disabled={
                   emailStatus === "pending" || emailStatus === "fulfilled"
                 }
@@ -154,7 +173,7 @@ function CheckIcon(props) {
         transition={{
           type: "tween",
           ease: "easeOut",
-          delay: 0.25,
+          delay: 0.75 * 0.5,
           duration: 0.25,
         }}
         strokeLinecap="round"

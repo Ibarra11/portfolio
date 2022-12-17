@@ -5,6 +5,7 @@ import { FiGithub, FiGlobe } from "react-icons/fi";
 import MOVIESPOT_IMG from "../public/moviespot.png";
 import AUDIOPHILE_IMG from "../public/audiophile-2.png";
 import WHEREINTHEWORLD_IMG from "../public/where-in-the-world.png";
+import clsx from "clsx";
 
 const variants = {
   hidden: { opacity: 0, y: 20 },
@@ -62,16 +63,21 @@ export default function Projects() {
             </ul>
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
               <Link
-                className="
-                inline-flex bg-slate-900 text-white rounded-3xl  justify-center items-center px-5 h-12
-                hover:bg-light-emerald focus:bg-light-emerald duration-200
-                "
+                className={clsx(
+                  "inline-flex bg-slate-900 text-white rounded-3xl justify-center items-center px-5 h-12 outline-none duration-200",
+                  "hover:bg-light-emerald",
+                  "focus:bg-light-emerald"
+                )}
                 href="/projects/moviespot"
               >
                 View Details
               </Link>
               <Link
-                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex items-center text-white px-4 h-12 duration-200 outline-none ",
+                  "hover:text-light-emerald",
+                  " focus:text-light-emerald focus:ring-4 focus:ring-light-emerald"
+                )}
                 href="https://flix-ibarra11.vercel.app/"
                 target="_blank"
                 aria-label="MovieSpot website"
@@ -79,7 +85,11 @@ export default function Projects() {
                 <FiGlobe size={20} />
               </Link>
               <Link
-                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex items-center text-white px-4 h-12 duration-200 outline-none ",
+                  "hover:text-light-emerald",
+                  " focus:text-light-emerald focus:ring-4 focus:ring-light-emerald"
+                )}
                 href="https://github.com/Ibarra11/Movie_App"
                 target="_blank"
                 aria-label="MovieSport github"
@@ -146,16 +156,21 @@ export default function Projects() {
             </ul>
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
               <Link
-                className="
-                inline-flex bg-slate-900 text-white rounded-3xl  justify-center items-center px-5 h-12
-                hover:bg-light-emerald focus:bg-light-emerald duration-200
-                "
+                className={clsx(
+                  "inline-flex bg-slate-900 text-white rounded-3xl justify-center items-center px-5 h-12 outline-none duration-200",
+                  "hover:bg-light-emerald",
+                  "focus:bg-light-emerald"
+                )}
                 href="/projects/audiophile"
               >
                 View Details
               </Link>
               <Link
-                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex items-center text-white px-4 h-12 duration-200 outline-none ",
+                  "hover:text-light-emerald",
+                  " focus:text-light-emerald focus:ring-4 focus:ring-light-emerald"
+                )}
                 href="https://audiophile-ruby.vercel.app/"
                 target="_blank"
                 aria-label="audiophile website"
@@ -163,7 +178,11 @@ export default function Projects() {
                 <FiGlobe size={20} />
               </Link>
               <Link
-                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex items-center text-white px-4 h-12 duration-200 outline-none ",
+                  "hover:text-light-emerald",
+                  " focus:text-light-emerald focus:ring-4 focus:ring-light-emerald"
+                )}
                 href="https://github.com/Ibarra11/audiophile"
                 target="_blank"
                 aria-label="audiophile github"
@@ -231,16 +250,21 @@ export default function Projects() {
             </ul>
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
               <Link
-                className="
-                inline-flex bg-slate-900 text-white rounded-3xl  justify-center items-center px-5 h-12
-                hover:bg-light-emerald focus:bg-light-emerald duration-200
-                "
+                className={clsx(
+                  "inline-flex bg-slate-900 text-white rounded-3xl justify-center items-center px-5 h-12 outline-none duration-200",
+                  "hover:bg-light-emerald",
+                  "focus:bg-light-emerald"
+                )}
                 href="/projects/where-in-the-world"
               >
                 View Details
               </Link>
               <Link
-                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex items-center text-white px-4 h-12 duration-200 outline-none ",
+                  "hover:text-light-emerald",
+                  " focus:text-light-emerald focus:ring-4 focus:ring-light-emerald"
+                )}
                 href="https://rest-countries-hgak.vercel.app/"
                 target="_blank"
                 aria-label="where in the world website"
@@ -248,7 +272,11 @@ export default function Projects() {
                 <FiGlobe size={20} />
               </Link>
               <Link
-                className="flex items-center text-white px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex items-center text-white px-4 h-12 duration-200 outline-none ",
+                  "hover:text-light-emerald",
+                  " focus:text-light-emerald focus:ring-4 focus:ring-light-emerald"
+                )}
                 href="https://github.com/Ibarra11/Rest_Countries"
                 target="_blank"
                 aria-label="where in the world github"

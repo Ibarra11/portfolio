@@ -25,7 +25,7 @@ export default function Header() {
         <ul className="h-full max-w-6xl mx-auto flex items-center text-gray-200">
           <li>
             <Link
-              className="relative inline-flex items-center h-8 w-40 outline-none  focus:ring-4  focus:ring-light-emerald"
+              className="relative inline-flex items-center h-8 w-40 outline-none  focus:ring-4  focus:ring-dark-emerald"
               href={`${router.pathname === "/" ? "#home" : "/#home"}`}
               scroll={false}
             >
