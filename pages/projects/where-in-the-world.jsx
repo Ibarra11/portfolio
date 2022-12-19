@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import clsx from "clsx";
 import { FiGithub, FiGlobe } from "react-icons/fi";
 import WHEREINTHEWORLD_IMG from "../../public/where-in-the-world.png";
 export default function WhereInTheWorld() {
@@ -27,7 +28,11 @@ export default function WhereInTheWorld() {
             <div className="absolute text-gray-300 flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
               <Link
                 aria-label="website for where in the world"
-                className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex ml-auto items-center  px-4 h-12 duration-200 outline-none",
+                  "hover:text-light-emerald",
+                  "focus:text-light-emerald focus:ring-light-emerald focus:ring-4"
+                )}
                 href="https://rest-countries-hgak.vercel.app/"
                 target="_blank"
               >
@@ -35,7 +40,11 @@ export default function WhereInTheWorld() {
               </Link>
               <Link
                 aria-label="github for where in the world"
-                className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex ml-auto items-center  px-4 h-12 duration-200 outline-none",
+                  "hover:text-light-emerald",
+                  "focus:text-light-emerald focus:ring-light-emerald focus:ring-4"
+                )}
                 href="https://github.com/Ibarra11/Rest_Countries"
                 target="_blank"
               >

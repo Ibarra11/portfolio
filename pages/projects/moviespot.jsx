@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -25,10 +26,14 @@ export default function MovieSpot() {
             <h1 className="text-5xl text-gray-100 text-center mb-14 mt-9 sm:mb-9">
               MovieSpot
             </h1>
-            <div className="absolute text-gray-300 flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
+            <div className="absolute text-gray-300 flex items-center top-full left-1/2 -translate-x-1/2 sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
               <Link
                 aria-label="Moviespot website"
-                className="flex ml-auto items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex ml-auto items-center  px-4 h-12 duration-200 outline-none",
+                  "hover:text-light-emerald",
+                  "focus:text-light-emerald focus:ring-light-emerald focus:ring-4"
+                )}
                 href="https://flix-ibarra11.vercel.app/"
                 target="_blank"
               >
@@ -36,7 +41,11 @@ export default function MovieSpot() {
               </Link>
               <Link
                 aria-label="Github repository for moviesport"
-                className="flex items-center  px-4 h-12 duration-200 hover:text-light-emerald focus:text-light-emerald"
+                className={clsx(
+                  "flex ml-auto items-center  px-4 h-12 duration-200 outline-none",
+                  "hover:text-light-emerald",
+                  "focus:text-light-emerald focus:ring-light-emerald focus:ring-4"
+                )}
                 href="https://github.com/Ibarra11/Movie_App"
                 target="_blank"
               >
