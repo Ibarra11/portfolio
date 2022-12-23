@@ -31,30 +31,15 @@ export default function About() {
         </div>
         <div className="grid grid-cols-4 gap-12 mt-16">
           <div className="col-span-2">
-            <h3 className="text-2xl text-gray-700  mb-4">Get to Know Me</h3>
+            <h3 className="text-2xl text-gray-700  mb-6">Get to Know Me</h3>
             <p className="text-lg text-dark-grey mb-3">
               Hi, my name is Alan Ibarra, a frontend developer with experience
               in building interactive, typesafe, and accessible web
               applications. I have a strong background in a variety of languages
               and frameworks, such as JavaScript, React, TypeScript, and
-              HTML/CSS.
-              {/* Hi, Im Alan Ibarra, a frontend developer based out of Northern
-              California. I am a first generation college graduate having
-              graduated from CSU Stanislaus in the year 2018 with a bachelors of
-              Computer Science. Originally, my goal in life was to work in law
-              enforcement, that it is what I was going to school for. However, I
-              started to have doubts about it and googled the most in demand
-              jobs one day and seen software engineering and decided that is
-              what I wanted to pursue a career in. The first programming
-              language I learned was Java and the first memorable program I
-              built with it was a calculator using the Eclipse IDE. I remember
-              the enjoyment I felt when I completed the program, which led to
-              the passion I have towards web development. Since then I have
-              continued to explore and broaden my understanding of web
-              development, while being extensive and constantly changing, it is
-              something that I enjoy . Aside from that some of my personal
-              hobbies include lifting weights, watching documentaries, and
-              hanging out with my family. */}
+              HTML/CSS. I pride myself in always trying to improve my skills and
+              keep up with the latest trends in web development, in order to
+              provide inclusive and engaging user experiences.
             </p>
             <p className="text-lg text-dark-grey">
               Aside from that, I am a first generation college graduate having
@@ -64,7 +49,7 @@ export default function About() {
             </p>
           </div>
           <div className="col-span-2 text-gray-700">
-            <h3 className=" text-2xl mb-4">My Skills</h3>
+            <h3 className=" text-2xl mb-6">My Skills</h3>
             <div className="grid grid-cols-4 gap-x-2 gap-y-4  items-start">
               <div className="flex flex-col gap-2 p-2 border-2 border-gray-200 shadow-md rounded-lg items-center">
                 <SiReact size={36} />

@@ -29,17 +29,17 @@ export default function Landing() {
           transition={{ duration: 0.4 }}
           className=" flex flex-col w-full sm:w-3/4  md:w-1/2 text-center md:text-start"
         >
-          <h3 className=" text-light-emerald text-xl font-medium md:text-2xl mb-1">
+          <h3 className=" text-light-emerald text-xl font-medium md:text-2xl mb-2">
             Frontend Developer
           </h3>
           <h1 className="text-white text-5xl font-semibold  md:text-6xl mb-4 ">
             Alan Ibarra
           </h1>
-          <p className="text-lg md:text-xl text-light-grey">
+          <p className="text-lg md:text-xl text-light-grey mb-4">
             Being able to take ideas and bring them to life is one of the most
-            rewarding feelings.
+            rewarding feelings
           </p>
-          <div className="mt-4  flex gap-4 justify-center md:justify-start">
+          <div className="flex gap-4 justify-center md:justify-start">
             <Link
               className="group ring-0 relative border-2 border-light-emerald p-3 cursor-pointer outline-none"
               aria-label="linkedin"
