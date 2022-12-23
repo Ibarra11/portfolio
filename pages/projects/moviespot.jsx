@@ -7,11 +7,10 @@ import MOVIESPOT_IMG from "../../public/moviespot.png";
 import useSearch_snippet from "../../public/useSearch_snippet.png";
 export default function MovieSpot() {
   return (
-    <div className="flex-1 pt-16 pb-8 px-9 bg-slate-800">
+    <article className="flex-1 pt-16 pb-8 px-9 bg-slate-800">
       <Head>
         <title>MovieSpot</title>
       </Head>
-
       <div className="max-w-4xl mx-auto pt-9">
         <div className="relative h-96 shadow-lg">
           <Image
@@ -167,6 +166,6 @@ export default function MovieSpot() {
           </div>
         </section>
       </div>
-    </div>
+    </article>
   );
 }

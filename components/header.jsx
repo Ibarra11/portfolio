@@ -59,7 +59,7 @@ export default function Header() {
                   href={`${router.pathname === "/" ? "#about" : "/#about"}`}
                   scroll={false}
                 >
-                  About Me
+                  About
                 </Link>
               </li>
 

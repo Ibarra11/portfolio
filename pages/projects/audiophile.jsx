@@ -7,7 +7,7 @@ import AUDIOPHILE_IMG from "../../public/audiophile-2.png";
 
 export default function Audiophile() {
   return (
-    <div className="flex-1 pt-16 pb-8 px-9 bg-slate-800">
+    <article className="flex-1 pt-16 pb-8 px-9 bg-slate-800">
       <Head>
         <title>Audiophile</title>
       </Head>
@@ -133,6 +133,6 @@ export default function Audiophile() {
           </div>
         </section>
       </div>
-    </div>
+    </article>
   );
 }

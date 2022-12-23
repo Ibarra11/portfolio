@@ -6,7 +6,7 @@ import { FiGithub, FiGlobe } from "react-icons/fi";
 import WHEREINTHEWORLD_IMG from "../../public/where-in-the-world.png";
 export default function WhereInTheWorld() {
   return (
-    <div className="flex-1 pt-16 pb-8 px-9 bg-slate-800">
+    <article className="flex-1 pt-16 pb-8 px-9 bg-slate-800">
       <Head>
         <title>Where in the world?</title>
       </Head>
@@ -146,6 +146,6 @@ export default function WhereInTheWorld() {
           </div>
         </section>
       </div>
-    </div>
+    </article>
   );
 }

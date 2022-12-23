@@ -21,7 +21,7 @@ export default function Projects() {
           <span className=" absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-5 h-2 bg-light-emerald w-16"></span>
         </div>
         {/* Start of MovieSpot */}
-        <div className="relative grid grid-cols-3 items-center gap-6 mb-16 md:gap-9">
+        <div className="relative grid grid-cols-3 mt-16 items-center gap-6 mb-16 md:gap-9">
           <motion.div
             variants={variants}
             whileInView="visible"
