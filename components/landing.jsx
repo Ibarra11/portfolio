@@ -32,7 +32,7 @@ export default function Landing() {
           <h3 className=" text-light-emerald text-xl font-medium md:text-2xl mb-2">
             Frontend Developer
           </h3>
-          <h1 className="text-white text-5xl font-semibold  md:text-6xl mb-4 ">
+          <h1 className="text-white text-5xl font-semibold  md:text-6xl mb-2 ">
             Alan Ibarra
           </h1>
           <p className="text-lg md:text-xl text-light-grey mb-4">

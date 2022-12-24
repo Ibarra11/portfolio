@@ -39,7 +39,7 @@ export default function MovieSpot() {
                 <FiGlobe size={20} />
               </Link>
               <Link
-                aria-label="Github repository for moviesport"
+                aria-label="Github repository for moviespot"
                 className={clsx(
                   "flex ml-auto items-center  px-4 h-12 duration-200 outline-none",
                   "hover:text-light-emerald",

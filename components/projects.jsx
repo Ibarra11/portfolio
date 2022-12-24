@@ -30,37 +30,43 @@ export default function Projects() {
             transition={{ duration: 0.4 }}
             className="col-span-3  w-full sm:w-3/4 mx-auto md:w-full md:mx-0 md:col-span-1 flex flex-col gap-2"
           >
-            <h3 className="text-2xl mb-1 text-white text-center md:text-start">
-              MovieSpot
-            </h3>
-            <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-1">
-              MovieSpot is an entertainment web app showcasing the most popular
-              Movies and TV-series.
-            </p>
-            <h4 className="hidden md:block text-white text-lg">Highlights</h4>
-            <ul className="hidden space-y-1 md:block text-light-grey mb-4">
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Authentication System</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>End to end typesafety</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Protected Routes</span>
-              </li>
-            </ul>
+            <div className="mb-3">
+              <h3 className="text-2xl mb-2 text-white text-center md:text-start">
+                MovieSpot
+              </h3>
+              <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-1">
+                MovieSpot is an entertainment web app showcasing the most
+                popular Movies and TV-series.
+              </p>
+            </div>
+            <div className="mb-3">
+              <h4 className="hidden mb-2 md:block text-white text-lg">
+                Highlights
+              </h4>
+              <ul className="hidden space-y-1 md:block text-light-grey mb-4">
+                <li className="flex items-center gap-2">
+                  <span
+                    className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                    aria-hidden="true"
+                  ></span>
+                  <span>Authentication System</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span
+                    className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                    aria-hidden="true"
+                  ></span>
+                  <span>End to end typesafety</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span
+                    className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                    aria-hidden="true"
+                  ></span>
+                  <span>Protected Routes</span>
+                </li>
+              </ul>
+            </div>
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
               <Link
                 className={clsx(
@@ -124,36 +130,43 @@ export default function Projects() {
             transition={{ duration: 0.4 }}
             className="col-span-3  w-full sm:w-3/4 mx-auto md:w-full md:mx-0 md:col-span-1 flex flex-col gap-2"
           >
-            <h3 className="text-2xl mb-1 text-white text-center md:text-start">
-              Audiophile
-            </h3>
-            <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-1">
-              Audiophile is a multi page ecommerce site for headphones.
-            </p>
-            <h4 className="hidden md:block text-white text-lg">Highlights</h4>{" "}
-            <ul className="hidden md:block text-light-grey space-y-1 mb-4">
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Shopping Cart</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Checkout Process</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Page Animations</span>
-              </li>
-            </ul>
+            <div className="mb-3">
+              <h3 className="text-2xl mb-2 text-white text-center md:text-start">
+                Audiophile
+              </h3>
+              <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-1">
+                Audiophile is a multi page ecommerce site for headphones.
+              </p>
+            </div>
+            <div className="mb-3">
+              <h4 className="hidden mb-2 md:block text-white text-lg">
+                Highlights
+              </h4>{" "}
+              <ul className="hidden md:block text-light-grey space-y-1 mb-4">
+                <li className="flex items-center gap-2">
+                  <span
+                    className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                    aria-hidden="true"
+                  ></span>
+                  <span>Shopping Cart</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span
+                    className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                    aria-hidden="true"
+                  ></span>
+                  <span>Checkout Process</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span
+                    className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                    aria-hidden="true"
+                  ></span>
+                  <span>Page Animations</span>
+                </li>
+              </ul>
+            </div>
+
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
               <Link
                 className={clsx(
@@ -217,37 +230,44 @@ export default function Projects() {
             transition={{ duration: 0.4 }}
             className="col-span-3  w-full sm:w-3/4 mx-auto md:w-full md:mx-0 md:col-span-1 flex flex-col gap-2"
           >
-            <h3 className="text-2xl mb-1 text-white text-center md:text-start">
-              Where in the world?
-            </h3>
-            <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-1">
-              Where in the world displays information about all the countries in
-              the world provided by the REST countries API.
-            </p>
-            <h4 className="hidden md:block text-white text-lg">Highlights</h4>
-            <ul className="hidden space-y-1 md:block text-light-grey mb-4">
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Next.js 13</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Server Components</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span
-                  className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
-                  aria-hidden="true"
-                ></span>
-                <span>Dark Mode / Light Mode</span>
-              </li>
-            </ul>
+            <div className="mb-3">
+              <h3 className="text-2xl mb-2 text-white text-center md:text-start">
+                Where in the world?
+              </h3>
+              <p className=" text-light-grey mb-4 text-lg text-center md:text-start md:mb-1">
+                Where in the world displays information about all the countries
+                in the world provided by the REST countries API.
+              </p>
+            </div>
+            <div className="mb-3">
+              <h4 className="hidden mb-2 md:block text-white text-lg">
+                Highlights
+              </h4>
+              <ul className="hidden space-y-1 md:block text-light-grey mb-4">
+                <li className="flex items-center gap-2">
+                  <span
+                    className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                    aria-hidden="true"
+                  ></span>
+                  <span>Next.js 13</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span
+                    className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                    aria-hidden="true"
+                  ></span>
+                  <span>Server Components</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <span
+                    className=" h-1.5 w-1.5 bg-light-emerald rounded-full"
+                    aria-hidden="true"
+                  ></span>
+                  <span>Dark Mode / Light Mode</span>
+                </li>
+              </ul>
+            </div>
+
             <div className="flex justify-center md:justify-start gap-4 mt-auto">
               <Link
                 className={clsx(
