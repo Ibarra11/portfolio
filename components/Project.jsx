@@ -30,10 +30,8 @@ export default function Project({
         className="w-full sm:w-3/4 order-1 text-center lg:text-left lg:order-none mx-auto  lg:w-[400px]   "
       >
         <div className="mb-6 space-y-2 lg:space-y-4 lg:mb-4 ">
-          <h3 className="text-lg lg:text-3xl  text-white">{title}</h3>
-          <p className=" text-light-grey  text-sm lg:text-base">
-            {description}
-          </p>
+          <h3 className="text-xl lg:text-3xl  text-white">{title}</h3>
+          <p className=" text-light-grey  text-base">{description}</p>
         </div>
         <div className="hidden lg:block space-y-2 md:mb-6">
           <h4 className="text-white text-base lg:text-xl">Highlights</h4>
