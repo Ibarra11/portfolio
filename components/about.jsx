@@ -1,3 +1,4 @@
+"use client";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 
@@ -45,7 +46,7 @@ export default function About() {
         initial="initial"
         viewport={{ amount: 0.4, once: true }}
         variants={variants}
-        className=" max-w-6xl mx-auto"
+        className="max-w-6xl mx-auto"
       >
         <div className="relative text-center mb-12">
           <h2 className="text-4xl text-gray-700 mb-12 text-center">About</h2>

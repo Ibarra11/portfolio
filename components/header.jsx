@@ -1,11 +1,14 @@
-import { useState, useRef, useLayoutEffect } from "react";
+"use client";
+import { useState } from "react";
 import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { FiMenu } from "react-icons/fi";
 import Image from "next/image";
+
 import MobileMenu from "./MobileMenu";
 import brand from "../public/brand.png";
+
 export default function Header() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);

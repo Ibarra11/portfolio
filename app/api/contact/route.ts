@@ -1,19 +1,18 @@
+import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-export default async function Contact(req, res) {
-  const { name, email, message, subject } = await JSON.parse(req.body);
-
-  const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASSWORD,
-    },
-  });
-
+export async function POST(req) {
   try {
+    const { name, email, message, subject } = await req.json();
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.SMTP_USER,
+        pass: process.env.SMTP_PASSWORD,
+      },
+    });
     await transporter.sendMail(
       {
         from: "alanjibarradev@gmail.com",
@@ -28,10 +27,10 @@ export default async function Contact(req, res) {
         if (err) {
           throw new Error(err);
         }
-        res.status(200).end();
       }
     );
+    return new NextResponse(null, { status: 200 });
   } catch (error) {
-    return res.status(500).json({ error: error.message || error.toString() });
+    return new NextResponse(null, { status: 500 });
   }
 }

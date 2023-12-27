@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
@@ -41,6 +42,7 @@ export default function Contact() {
           message: message.value,
         }),
       });
+      console.log(res);
       setEmailStatus("success");
       event.target.reset();
       setTimeout(() => {

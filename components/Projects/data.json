@@ -1,0 +1,51 @@
+{
+  "projects": [
+    {
+      "title": "Frontend Quiz",
+      "detailPage": "/projects/frontend-quiz",
+      "img": "/frontend-quiz.png",
+      "url": "https://app-quiz-eta.vercel.app/",
+      "github": "https://github.com/Ibarra11/app-quiz",
+      "description": "Frontend Quiz is a interactive quiz application that test and enhance knowledge in key areas of frontend development, focusing on JavaScript, CSS, HTML, and accessibility principles.",
+      "highlights": [
+        "React Router",
+        "Confetti animation for scores greater than 80%"
+      ]
+    },
+    {
+      "title": "MovieSpot",
+      "detailPage": "/projects/moviespot",
+      "img": "/moviespot.png",
+      "url": "https://flix-ibarra11.vercel.app/",
+      "github": "https://github.com/Ibarra11/Movie_App",
+      "description": "MovieSpot is an entertainment web application that showcases the most popular movies and TV series.",
+      "highlights": [
+        "Authentication System using Bcrypt and Iron Session",
+        "End to end type safety with GraphQL",
+        "Protected Routes"
+      ]
+    },
+    {
+      "title": "Audiophile",
+      "img": "/audiophile.png",
+      "detailPage": "/projects/audiophile",
+      "url": "https://audiophile-ruby.vercel.app/",
+      "github": "https://github.com/Ibarra11/audiophile",
+      "description": "Audiophile is a fictional ecommerce site for headphones.",
+      "highlights": [
+        "Shopping Cart",
+        "Checkout Process ",
+        "Page animations using Framer Motion"
+      ]
+    },
+    {
+      "title": "Where in the world",
+      "img": "/where-in-the-world.png",
+      "detailPage": "/projects/where-in-the-world",
+      "url": "https://rest-countries-hgak.vercel.app/",
+      "github": "https://github.com/Ibarra11/Rest_Countries",
+      "description": "Where in the world displays information about all the countries in the world provided by the REST countries API.",
+      "highlights": ["Next.js 13", "Server Components", "Dark/Light Mode"]
+    }
+  ]
+}

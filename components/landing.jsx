@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -27,10 +28,10 @@ export default function Landing() {
           initial="initial"
           animate="animate"
           transition={{ duration: 0.4 }}
-          className=" flex flex-col w-full sm:w-3/4  md:w-1/2 text-center md:text-start"
+          className="  flex flex-col w-full sm:w-3/4  md:w-1/2 text-center md:text-start"
         >
           <h3 className=" text-light-emerald text-xl font-medium md:text-2xl mb-2">
-            Frontend Developer
+            Software Developer
           </h3>
           <h1 className="text-white text-5xl font-semibold  md:text-6xl mb-2 ">
             Alan Ibarra
