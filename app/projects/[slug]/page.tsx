@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+import { readFileSync, readdirSync } from "fs";
 import ProjectDetail from "@/components/ProjectDetail";
 import React from "react";
 
@@ -10,9 +10,15 @@ const getContent = React.cache((slug) => {
   return data;
 });
 
+export function generateStaticParams() {
+  const files = readdirSync("./content");
+  return files.map((file) => ({
+    slug: file.replace(".json", ""),
+  }));
+}
+
 export async function generateMetadata({ params }) {
   const content = getContent(params.slug);
-
   return {
     title: content.title,
     description: content.description,
