@@ -10,7 +10,6 @@ import MobileMenu from "./MobileMenu";
 import brand from "../public/brand.png";
 
 export default function Header() {
-  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -27,7 +26,7 @@ export default function Header() {
           <li>
             <Link
               className="relative inline-flex items-center h-8 w-40 outline-none  focus:ring-4  focus:ring-dark-emerald"
-              href={`${router.pathname === "/" ? "#home" : "/#home"}`}
+              href="#home"
               scroll={false}
             >
               <Image src={brand} alt="home page" className="w-full h-full" />
@@ -48,7 +47,7 @@ export default function Header() {
               <li>
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href={"#home"}
+                  href="#home"
                 >
                   Home
                 </Link>
@@ -56,7 +55,7 @@ export default function Header() {
               <li>
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href={"#about"}
+                  href="#about"
                 >
                   About
                 </Link>
@@ -65,7 +64,7 @@ export default function Header() {
               <li>
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href={"#projects"}
+                  href="#projects"
                 >
                   Projects
                 </Link>
@@ -73,7 +72,7 @@ export default function Header() {
               <li>
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href={"#contact"}
+                  href="#contact"
                 >
                   Contact
                 </Link>
