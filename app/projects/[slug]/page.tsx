@@ -28,9 +28,9 @@ export async function generateMetadata({ params }) {
 async function ProjectPage({ params }: { params: { slug: string } }) {
   const content = getContent(params.slug);
   return (
-    <div className=" bg-slate-800 pt-16 lg:pt-24 px-6">
+    <main className=" bg-slate-800 pt-16 lg:pt-24 px-6">
       <ProjectDetail {...content} />;
-    </div>
+    </main>
   );
 }
 

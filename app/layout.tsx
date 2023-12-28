@@ -4,7 +4,7 @@ import "../styles/globals.css";
 import Footer from "@/components/footer";
 
 import { Raleway } from "next/font/google";
-import Header from "@/components/header";
+
 const raleway = Raleway({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html className={raleway.className} lang="en">
       <body className="overflow-x-hidden">
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
