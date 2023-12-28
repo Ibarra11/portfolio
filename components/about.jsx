@@ -62,12 +62,14 @@ export default function About() {
         className="max-w-6xl mx-auto space-y-12  lg:space-y-20 "
       >
         <div className="relative text-center">
-          <h2 className="text-4xl text-gray-700 text-center">About</h2>
+          <h2 className=" text-3xl lg:text-4xl text-gray-700 text-center">
+            About
+          </h2>
           <span className="absolute  left-1/2 bottom-0 -translate-x-1/2 translate-y-5 h-2 bg-light-emerald w-16"></span>
         </div>
         <div className="grid grid-cols-4 gap-6 lg:gap-12">
           <div className="col-span-4 lg:col-span-2">
-            <h3 className="text-2xl text-gray-700 mb-4 lg:mb-6">
+            <h3 className="text-xl lg:text-2xl text-gray-700 mb-4 lg:mb-6">
               Get to Know Me
             </h3>
             <p className="text-base lg:text-lg text-dark-grey mb-2">
@@ -87,7 +89,7 @@ export default function About() {
             </p>
           </div>
           <div className={clsx("col-span-4 text-gray-700", "lg:col-span-2")}>
-            <h3 className="text-2xl mb-4 lg:mb-6">My Skills</h3>
+            <h3 className="text-xl lg:text-2xl mb-4 lg:mb-6">My Skills</h3>
             <motion.ul
               whileInView="animate"
               viewport={{ amount: 0.6, once: true }}

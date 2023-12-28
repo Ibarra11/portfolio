@@ -55,7 +55,7 @@ export default function Contact() {
   return (
     <section className="py-16 md:py-24 bg-gray-100 px-9" id="contact">
       <div className="relative max-w-6xl  mx-auto">
-        <div className="grid grid-cols-3 gap-12 ">
+        <div className="grid grid-cols-3 gap-6  lg:gap-12 ">
           <motion.div
             variants={variants}
             whileInView="visible"
@@ -64,7 +64,9 @@ export default function Contact() {
             transition={{ duration: 0.4 }}
             className="col-span-3 text-center md:col-span-1 self-center"
           >
-            <h2 className="text-gray-700 text-4xl mb-2">Get in Touch</h2>
+            <h2 className="text-gray-700 text-3xl lg:text-4xl mb-2">
+              Get in Touch
+            </h2>
             <p className=" text-gray-700 text-lg">
               Feel free to contact me regarding any questions
             </p>
