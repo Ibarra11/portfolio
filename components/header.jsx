@@ -17,9 +17,7 @@ export default function Header() {
     <header
       id="header"
       className={`
-      fixed top-0 inset-x-0 px-9  z-20 bg-black opacity-95 border-b-2 border-b-light-emerald
- 
-      `}
+      fixed top-0 inset-x-0 px-9  z-20 bg-black opacity-95 border-b-2 border-b-light-emerald`}
     >
       <AnimatePresence>
         {isOpen && <MobileMenu isOpen={isOpen} handleOpenChange={setIsOpen} />}
@@ -50,7 +48,7 @@ export default function Header() {
               <li>
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href={`${router.pathname === "/" ? "#home" : "/#home"}`}
+                  href={"#home"}
                 >
                   Home
                 </Link>
@@ -58,7 +56,7 @@ export default function Header() {
               <li>
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href={router.pathname === "/" ? `#about` : "/#about"}
+                  href={"#about"}
                 >
                   About
                 </Link>
@@ -67,9 +65,7 @@ export default function Header() {
               <li>
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href={`${
-                    router.pathname === "/" ? "#projects" : "/#projects"
-                  }`}
+                  href={"#projects"}
                 >
                   Projects
                 </Link>
@@ -77,7 +73,7 @@ export default function Header() {
               <li>
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href={`${router.pathname === "/" ? "#contact" : "/#contact"}`}
+                  href={"#contact"}
                 >
                   Contact
                 </Link>
