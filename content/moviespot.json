@@ -43,7 +43,7 @@
     {
       "title": "Protected Routes",
       "content": [
-        "There are some routes in that app that should only be seen by users. For Example, routes /, /movies, /tv-series, and /bookmarked. In order to protect these routes, I check the session when the user visits one of these pages and if there is no session they get redirected to the login page. I am checking the session client side, which means there is a little flash of content that is shown to unaunthenticated users."
+        "There are some routes in that app that should only be seen by users. For example the protected routes are [/movies, /tv-series, /bookmarked]. In order to protect these routes, I check the session when the user visits one of these pages and if there is no session they get redirected to the login page. I am checking the session client side, which means there is a little flash of content that is shown to unaunthenticated users."
       ]
     }
   ]

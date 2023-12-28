@@ -1,0 +1,29 @@
+{
+  "title": "Frontend Quiz",
+  "detailPage": "/projects/frontend-quiz",
+  "img": "/frontend-quiz.png",
+  "url": "https://app-quiz-eta.vercel.app/",
+  "github": "https://github.com/Ibarra11/app-quiz",
+  "description": "Frontend Quiz is a interactive quiz application that test and enhance knowledge in key areas of frontend development, focusing on JavaScript, CSS, HTML, and accessibility principles.",
+  "stack": ["React", "TypeScript", "TailwindCSS", "Vite", "React Router"],
+  "learned": [
+    {
+      "title": "Routing",
+      "content": [
+        "This was my first project using the new React Router API.  I liked the API design of constructing your routes in the top level file.  I did have to handle dynamic routes and load different questions based on the route.  For example, the route was setup like /quiz/:quizId and I would get the quizId param and access in the loader and pass the questions to the component.  For this project, the questions were on the filesystem, so I had to just had to import the data as JSON"
+      ]
+    },
+    {
+      "title": "Accessibility",
+      "content": [
+        "I wanted to make sure that the application was accessible to keyboard users.  So, I had the answers in the form of a radio group.  This would allow the user to toggle through the answers using the arrow keys.  I did have to modify the radio button to look like an answer and not the native presentation.  I also, placed the radio elements within a form element, so that the user can select an answer by hitting the enter key.  In other words, this application can be utilized without a pointer device like a mouse."
+      ]
+    },
+    {
+      "title": "Animations",
+      "content": [
+        "I used Radix UI progress bar to indicate how far along the user was in completing the quiz.  I would increase the progress bar by incrementing the width on the style attribute.  I would then animate using an easing curve that.  Other than that, I also used a confetti animation to congratulate the user if they scored 80% or better."
+      ]
+    }
+  ]
+}

@@ -51,7 +51,6 @@ export default function Header() {
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                   href={`${router.pathname === "/" ? "#home" : "/#home"}`}
-                  scroll={false}
                 >
                   Home
                 </Link>
@@ -59,8 +58,7 @@ export default function Header() {
               <li>
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href={`${router.pathname === "/" ? "#about" : "/#about"}`}
-                  scroll={false}
+                  href={router.pathname === "/" ? `#about` : "/#about"}
                 >
                   About
                 </Link>
@@ -72,7 +70,6 @@ export default function Header() {
                   href={`${
                     router.pathname === "/" ? "#projects" : "/#projects"
                   }`}
-                  scroll={false}
                 >
                   Projects
                 </Link>
@@ -81,7 +78,6 @@ export default function Header() {
                 <Link
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                   href={`${router.pathname === "/" ? "#contact" : "/#contact"}`}
-                  scroll={false}
                 >
                   Contact
                 </Link>

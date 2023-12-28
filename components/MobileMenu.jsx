@@ -3,7 +3,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
 import { TfiClose } from "react-icons/tfi";
 
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const container = {
   hidden: { opacity: 0 },
