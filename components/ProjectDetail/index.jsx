@@ -50,8 +50,8 @@ export default function ProjectDetail({
               {title}
             </h1>
             <div className="absolute text-gray-300 flex items-center top-full left-1/2 -translate-x-1/2  sm:left-auto sm:h-full sm:top-0 sm:bottom-auto sm:translate-y-0 sm:translate-x-0  sm:right-0">
-              <Link
-                aria-label={`website`}
+              <a
+                aria-label={`${title} website`}
                 className={clsx(
                   "flex ml-auto items-center  px-4 h-12 duration-200 outline-none",
                   "hover:text-light-emerald",
@@ -61,9 +61,9 @@ export default function ProjectDetail({
                 target="_blank"
               >
                 <FiGlobe size={20} />
-              </Link>
-              <Link
-                aria-label={`github`}
+              </a>
+              <a
+                aria-label={`${title} github`}
                 className={clsx(
                   "flex ml-auto items-center  px-4 h-12 duration-200 outline-none",
                   "hover:text-light-emerald",
@@ -73,7 +73,7 @@ export default function ProjectDetail({
                 target="_blank"
               >
                 <FiGithub size={20} />
-              </Link>
+              </a>
             </div>
           </div>
           <p className="text-base  lg:text-lg text-gray-300">{description}</p>

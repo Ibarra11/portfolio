@@ -41,7 +41,7 @@ export default function Landing() {
             rewarding feelings
           </p>
           <div className="flex gap-4 justify-center md:justify-start">
-            <Link
+            <a
               className="group ring-0 relative border-2 border-light-emerald p-3 cursor-pointer outline-none"
               aria-label="linkedin"
               href="https://www.linkedin.com/in/alanjibarra/"
@@ -55,8 +55,8 @@ export default function Landing() {
                 className="relative z-10 text-white  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
                 size={24}
               />
-            </Link>
-            <Link
+            </a>
+            <a
               className="group relative border-2 border-light-emerald p-3 cursor-pointer outline-none"
               aria-label="github"
               href="https://github.com/Ibarra11"
@@ -69,7 +69,7 @@ export default function Landing() {
                 className="relative z-10 text-white  duration-75 group-hover:text-black  group-hover:duration-100 group-hover:delay-150 group-focus:text-black group-focus:duration-100 group-focus:delay-150 "
                 size={24}
               />
-            </Link>
+            </a>
           </div>
         </motion.div>
         <div
