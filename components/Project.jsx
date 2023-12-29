@@ -49,6 +49,7 @@ export default function Project({
         </div>
         <div className="flex justify-center lg:justify-start gap-2 lg:gap-4">
           <Link
+            prefetch={false}
             className={clsx(
               "text-sm   inline-flex bg-slate-900 text-white rounded-3xl justify-center items-center px-5 h-12 md:text-base outline-none duration-200",
               "hover:bg-light-emerald",
@@ -59,6 +60,7 @@ export default function Project({
             View Details
           </Link>
           <Link
+            prefetch={false}
             className={clsx(
               "flex items-center text-white px-4 h-12 duration-200 outline-none ",
               "hover:text-light-emerald",
@@ -79,6 +81,7 @@ export default function Project({
             href={github}
             target="_blank"
             aria-label={`${title} github`}
+            prefetch={false}
           >
             <FiGithub size={20} />
           </Link>
