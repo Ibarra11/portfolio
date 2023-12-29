@@ -53,7 +53,7 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                     <button
                       onClick={() => {
                         handleOpenChange(false);
-                        router.push("#", "#");
+                        router.replace("#home");
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
@@ -64,7 +64,7 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                     <button
                       onClick={() => {
                         handleOpenChange(false);
-                        router.push("#about");
+                        router.replace("#about");
                       }}
                       className="text-2xl px-12 py-2 focus hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
@@ -75,7 +75,7 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                     <button
                       onClick={() => {
                         handleOpenChange(false);
-                        router.push("#projects");
+                        router.replace("#projects");
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
@@ -86,7 +86,7 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                     <button
                       onClick={() => {
                         handleOpenChange(false);
-                        router.push("#contact");
+                        router.replace("#contact");
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
