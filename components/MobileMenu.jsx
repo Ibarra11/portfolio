@@ -1,6 +1,5 @@
 "use client";
 import * as Dialog from "@radix-ui/react-dialog";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { TfiClose } from "react-icons/tfi";
 import { useRouter } from "next/navigation";
@@ -26,7 +25,6 @@ const item = {
 };
 
 export default function MobileMenu({ isOpen, handleOpenChange }) {
-  const router = useRouter();
   return (
     <Dialog.Root onOpenChange={handleOpenChange} open={isOpen}>
       <Dialog.Portal>
