@@ -36,7 +36,7 @@ export default function Header() {
               className="text-gray-300 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
             >
               <FiMenu size={24} />
-              <div className=" sr-only">open mobile menu</div>``
+              <div className=" sr-only">open mobile menu</div>
             </button>
           </li>
           <li className="ml-auto hidden md:block ">
