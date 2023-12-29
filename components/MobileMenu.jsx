@@ -1,5 +1,6 @@
 "use client";
 import * as Dialog from "@radix-ui/react-dialog";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { TfiClose } from "react-icons/tfi";
 import { useRouter } from "next/navigation";
@@ -50,55 +51,48 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                   className="flex items-center flex-col gap-6 text-gray-200"
                 >
                   <motion.li variants={item}>
-                    <button
+                    <Link
                       onClick={() => {
                         handleOpenChange(false);
-                        router.push("/#home");
                       }}
+                      href="/#home"
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
                       Home
-                    </button>
+                    </Link>
                   </motion.li>
                   <motion.li variants={item}>
-                    <button
+                    <Link
+                      href="/#about"
                       onClick={() => {
-                        flushSync(() => {
-                          handleOpenChange(false);
-                        });
-
-                        router.push("/#about");
+                        handleOpenChange(false);
                       }}
                       className="text-2xl px-12 py-2 focus hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
                       About
-                    </button>
+                    </Link>
                   </motion.li>
                   <motion.li variants={item}>
-                    <button
+                    <Link
+                      href="/#projects"
                       onClick={() => {
-                        flushSync(() => {
-                          handleOpenChange(false);
-                        });
-                        router.push("/#projects");
+                        handleOpenChange(false);
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
                       Projects
-                    </button>
+                    </Link>
                   </motion.li>
                   <motion.li variants={item}>
-                    <button
+                    <Link
+                      href="/#contact"
                       onClick={() => {
-                        flushSync(() => {
-                          handleOpenChange(false);
-                        });
-                        router.push("/#contact");
+                        handleOpenChange(false);
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
                       Contact
-                    </button>
+                    </Link>
                   </motion.li>
                 </motion.ul>
                 <Dialog.Close
