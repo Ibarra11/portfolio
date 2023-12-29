@@ -24,7 +24,7 @@ export default function Header() {
           <li>
             <a
               className="relative inline-flex items-center h-8 w-40 outline-none  focus:ring-4  focus:ring-dark-emerald"
-              href="#home"
+              href="/"
             >
               <Image src={brand} alt="home page" className="w-full h-full" />
             </a>
@@ -44,7 +44,7 @@ export default function Header() {
               <li>
                 <a
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href="#home"
+                  href="/#home"
                 >
                   Home
                 </a>
@@ -61,7 +61,7 @@ export default function Header() {
               <li>
                 <a
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href="#projects"
+                  href="/#projects"
                 >
                   Projects
                 </a>
@@ -69,7 +69,7 @@ export default function Header() {
               <li>
                 <a
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
-                  href="#contact"
+                  href="/#contact"
                 >
                   Contact
                 </a>
