@@ -1,8 +1,6 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
-import { useRouter } from "next/navigation";
 import { FiMenu } from "react-icons/fi";
 import Image from "next/image";
 
@@ -24,13 +22,12 @@ export default function Header() {
       <nav className="h-16">
         <ul className="h-full max-w-6xl mx-auto flex items-center text-gray-200">
           <li>
-            <Link
+            <a
               className="relative inline-flex items-center h-8 w-40 outline-none  focus:ring-4  focus:ring-dark-emerald"
               href="#home"
-              scroll={false}
             >
               <Image src={brand} alt="home page" className="w-full h-full" />
-            </Link>
+            </a>
           </li>
           {/* Hamburger Menu */}
           <li aria-label="open mobile menu" className="ml-auto md:hidden">
@@ -39,43 +36,43 @@ export default function Header() {
               className="text-gray-300 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
             >
               <FiMenu size={24} />
-              <div className=" sr-only">open mobile menu</div>
+              <div className=" sr-only">open mobile menu</div>``
             </button>
           </li>
           <li className="ml-auto hidden md:block ">
             <ul className="flex gap-8">
               <li>
-                <Link
+                <a
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                   href="#home"
                 >
                   Home
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                   href="#about"
                 >
                   About
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
+                <a
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                   href="#projects"
                 >
                   Projects
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   className="p-3 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                   href="#contact"
                 >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </li>
