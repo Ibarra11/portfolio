@@ -2,7 +2,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 import clsx from "clsx";
 
 import { FiGithub, FiGlobe, FiArrowLeft } from "react-icons/fi";
@@ -20,9 +19,6 @@ export default function ProjectDetail({
 
   return (
     <article className="max-w-4xl mx-auto">
-      <Head>
-        <title>{title}</title>
-      </Head>
       <button
         className="group flex items-center gap-2 text-slate-300 mb-4 outline-none focus:ring-2 focus:ring-light-emerald"
         onClick={() => router.back()}
