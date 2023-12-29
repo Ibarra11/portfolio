@@ -79,7 +79,6 @@ export default function Project({
             href={github}
             target="_blank"
             aria-label={`${title} github`}
-            prefetch={false}
           >
             <FiGithub size={20} />
           </a>

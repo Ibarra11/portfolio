@@ -2,7 +2,6 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { motion } from "framer-motion";
 import { TfiClose } from "react-icons/tfi";
-
 import { useRouter } from "next/navigation";
 
 const container = {
@@ -53,7 +52,7 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                     <button
                       onClick={() => {
                         handleOpenChange(false);
-                        router.replace("/#home");
+                        router.push("/#home");
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
@@ -64,7 +63,7 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                     <button
                       onClick={() => {
                         handleOpenChange(false);
-                        router.replace("/#about");
+                        router.push("/#about");
                       }}
                       className="text-2xl px-12 py-2 focus hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
@@ -75,7 +74,7 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                     <button
                       onClick={() => {
                         handleOpenChange(false);
-                        router.replace("/#projects");
+                        router.push("/#projects");
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
@@ -86,7 +85,7 @@ export default function MobileMenu({ isOpen, handleOpenChange }) {
                     <button
                       onClick={() => {
                         handleOpenChange(false);
-                        router.replace("/#contact");
+                        router.push("/#contact");
                       }}
                       className="text-2xl px-12 py-2 hover:text-light-emerald duration-200 outline-none  focus:ring-4  focus:ring-light-emerald"
                     >
