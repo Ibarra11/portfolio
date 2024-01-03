@@ -8,7 +8,7 @@
       "github": "https://github.com/Ibarra11/app-quiz",
       "description": "Frontend Quiz is a interactive quiz application that test and enhance knowledge in key areas of frontend development, focusing on JavaScript, CSS, HTML, and accessibility principles.",
       "highlights": [
-        "React Router",
+        "Number of attemps and the average score for each quiz",
         "Confetti animation for scores greater than 80%"
       ]
     },
