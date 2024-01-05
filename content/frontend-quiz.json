@@ -5,7 +5,16 @@
   "url": "https://app-quiz-eta.vercel.app/",
   "github": "https://github.com/Ibarra11/app-quiz",
   "description": "Frontend Quiz is a interactive quiz application that test and enhance knowledge in key areas of frontend development, focusing on JavaScript, CSS, HTML, and accessibility principles.",
-  "stack": ["React", "TypeScript", "TailwindCSS", "Vite", "React Router"],
+  "stack": [
+    "React",
+    "TypeScript",
+    "TailwindCSS",
+    "Vite",
+    "React Router",
+    "Node.js",
+    "Express.js",
+    "Postgres"
+  ],
   "learned": [
     {
       "title": "Routing",
@@ -22,7 +31,7 @@
     {
       "title": "Backend",
       "content": [
-        "For my backend, I used Express.js and Node.js to setup my server and I used node-postgres to communicate with the DB.  For my routes, I used validation middleware using ZOD to ensure that the correct format was being sent.  Any routes nont defined were resolved with a error handler middleware that resulted in a 404.  I also used helmet, just to provide some security to my API."
+        "For my backend, I used Express.js and Node.js to setup my server and I used node-postgres to communicate with the DB.  For my routes, I used validation middleware using ZOD to ensure that the correct format was being sent.  Any routes not defined were resolved with a error handler middleware that resulted in a 404.  I also used helmet, just to provide some security to my API."
       ]
     },
     {
