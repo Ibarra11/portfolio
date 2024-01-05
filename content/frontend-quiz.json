@@ -10,7 +10,7 @@
     {
       "title": "Routing",
       "content": [
-        "This was my first project using the new React Router API.  I liked the API design of constructing your routes in the top level file.  I did have to handle dynamic routes and load different questions based on the route.  For example, the route was setup like /quiz/:quizId and I would get the quizId param and access in the loader and pass the questions to the component.  For this project, the questions were on the filesystem, so I had to just had to import the data as JSON"
+        "This was my first project using the new React Router API.  I liked the API design of constructing your routes in the top level file.  I did have to handle dynamic routes and load different questions based on the route.  For example, the route was setup like /quiz/:quizId and I would get the quizId param and I would use the loader function to access the param and retrieve the questions from the db."
       ]
     },
     {
@@ -20,9 +20,15 @@
       ]
     },
     {
-      "title": "Animations",
+      "title": "Backend",
       "content": [
-        "I used Radix UI progress bar to indicate how far along the user was in completing the quiz.  I would increase the progress bar by incrementing the width on the style attribute.  I would then animate using an easing curve that.  Other than that, I also used a confetti animation to congratulate the user if they scored 80% or better."
+        "For my backend, I used Express.js and Node.js to setup my server and I used node-postgres to communicate with the DB.  For my routes, I used validation middleware using ZOD to ensure that the correct format was being sent.  Any routes nont defined were resolved with a error handler middleware that resulted in a 404.  I also used helmet, just to provide some security to my API."
+      ]
+    },
+    {
+      "title": "Isolated Monorepo",
+      "content": [
+        "For this project, I decided to seperate the frontend and backend in their seperate folders.  This was a little confusing because I had to figure out how to host this project.  What I was going to do initially was host the two parts on a single server and use some proxy to communicate between the two.  However, I decided to host the backend on Railway and the frontend on Vercel.  I think this is a good choice because my db is also hosted on Railway, so the backend and the server are in close proximity.  And with Vercel, I can take advantage of their edge deployments."
       ]
     }
   ]
