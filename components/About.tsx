@@ -73,19 +73,21 @@ export default function About() {
               Get to Know Me
             </h3>
             <p className="text-base lg:text-lg text-dark-grey mb-2">
-              Hi, my name is Alan Ibarra, a frontend developer with experience
-              in building interactive, typesafe, and accessible web
-              applications. I have a strong background in a variety of languages
-              and frameworks, such as JavaScript, React, TypeScript, and
-              HTML/CSS. I pride myself in always trying to improve my skills and
-              keep up with the latest trends in web development, in order to
-              provide inclusive and engaging user experiences.
+              Hello, I'm Alan Ibarra, a dedicated Frontend Developer with a
+              passion for crafting interactive, type-safe, and accessible web
+              applications. My expertise spans several key technologies,
+              including JavaScript, React, TypeScript, and HTML/CSS. I am
+              constantly seeking to refine my skills and expand my knowledge to
+              stay at the forefront of web development trends, ensuring that I
+              provide user experiences that are both inclusive and engaging.
             </p>
             <p className="text-base lg:text-lg text-dark-grey">
-              Aside from that, I am a first generation college graduate having
-              graduated from CSU Stanislaus in the year 2018 with a bachelors of
-              Computer Science. Outside of programming some of my hobbies
-              include weightlifting and watching documentaries.
+              Beyond my professional life, I hold a Bachelor's degree in
+              Computer Science from CSU Stanislaus, class of 2018, and take
+              pride in being a first-generation college graduate. When not
+              immersed in programming, I enjoy staying active through
+              weightlifting and broadening my understanding of the world by
+              watching documentaries.
             </p>
           </div>
           <div className={clsx("col-span-4 text-gray-700", "lg:col-span-2")}>
