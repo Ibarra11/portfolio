@@ -11,6 +11,9 @@ import {
   SiPrisma,
   SiCypress,
   SiReact,
+  SiNodedotjs,
+  SiPostgresql,
+  SiMysql,
 } from "react-icons/si";
 
 const variants = {
@@ -37,18 +40,21 @@ const SkillItem = {
   },
 };
 
-const SKILL_ICON = {
+const SKILLS_ICONS = {
   React: SiReact,
   "Next.js": SiNextdotjs,
   TypeScript: SiTypescript,
   JavaScript: SiJavascript,
+  Node: SiNodedotjs,
   Tailwind: SiTailwindcss,
   Cypress: SiCypress,
   GraphQL: SiGraphql,
   Prisma: SiPrisma,
+  Postgres: SiPostgresql,
+  MySQL: SiMysql,
 };
 
-const SKILLS = Object.keys(SKILL_ICON);
+const SKILLS = Object.keys(SKILLS_ICONS);
 
 export default function About() {
   return (
@@ -73,21 +79,24 @@ export default function About() {
               Get to Know Me
             </h3>
             <p className="text-base lg:text-lg text-dark-grey mb-2">
-              Hello, I'm Alan Ibarra, a dedicated Frontend Developer with a
-              passion for crafting interactive, type-safe, and accessible web
-              applications. My expertise spans several key technologies,
-              including JavaScript, React, TypeScript, and HTML/CSS. I am
-              constantly seeking to refine my skills and expand my knowledge to
-              stay at the forefront of web development trends, ensuring that I
-              provide user experiences that are both inclusive and engaging.
+              Hello! I'm Alan Ibarra. As a Software Developer, my passion lies
+              in creating interactive, accessible, and type-safe web
+              applications. My technical toolkit is rich with advanced skills in
+              JavaScript, React, TypeScript, and HTML/CSS. I am committed to
+              continuous learning, ensuring my work remains at the cutting edge
+              of web development and delivers inclusive and engaging user
+              experiences.
             </p>
             <p className="text-base lg:text-lg text-dark-grey">
-              Beyond my professional life, I hold a Bachelor's degree in
-              Computer Science from CSU Stanislaus, class of 2018, and take
-              pride in being a first-generation college graduate. When not
-              immersed in programming, I enjoy staying active through
-              weightlifting and broadening my understanding of the world by
-              watching documentaries.
+              I graduated with a Bachelor’s degree in Computer Science from CSU
+              Stanislaus in 2018, and I am proud to be a first-generation
+              college graduate. Outside of my professional endeavors, I keep
+              active with weightlifting and enjoy expanding my view of the world
+              by watching documentaries. --- This version maintains the essence
+              of your original text while streamlining some of the information
+              for better flow and impact. If you have specific preferences or
+              additional details you'd like to incorporate, feel free to let me
+              know!
             </p>
           </div>
           <div className={clsx("col-span-4 text-gray-700", "lg:col-span-2")}>
@@ -111,7 +120,7 @@ export default function About() {
 }
 
 function Skill({ skill }) {
-  const Icon = SKILL_ICON[skill];
+  const Icon = SKILLS_ICONS[skill];
   return (
     <motion.li
       variants={SkillItem}
