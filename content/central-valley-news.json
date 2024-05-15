@@ -1,0 +1,22 @@
+{
+  "title": "Central Valley News",
+  "img": "/central-valley-news.png",
+  "url": "https://central-valley-news.netlify.app/news",
+  "github": "https://github.com/Algorithm-Allies/valleyNews",
+  "description": "Worked collaboratively with a team of seven to develop a centralized platform for aggregating articles from various publications. Implemented web scraping techniques to gather content, creating a convenient and comprehensive source of news and information for users.",
+  "stack": ["React", "Node", "TailwindCSS", "Cheerio"],
+  "learned": [
+    {
+      "title": "Webscraper",
+      "content": [
+        "I was part of a team that developed a sophisticated web scraper using Node.js, integrating the Cheerio library for parsing HTML and a cron job for scheduling tasks. This tool was specifically designed to scrape multiple news publications automatically, gathering updated content at predetermined intervals. By leveraging Cheerio, we efficiently extracted relevant data like headlines, images, and article content, which allowed us to handle large volumes of data with minimal overhead. The use of a cron job enabled the system to run autonomously, ensuring that our database was always filled with the latest news without manual intervention. This project not only honed my technical skills but also provided valuable insights into managing and manipulating large datasets in real-time."
+      ]
+    },
+    {
+      "title": "Agile Methodology",
+      "content": [
+        "Working with Agile methodology has fundamentally transformed my approach to project management and team collaboration. Agile emphasizes flexibility, continuous improvement, and the importance of feedback from all stakeholders. By breaking down projects into manageable units called sprints, teams are able to tackle complex tasks more efficiently and adapt quickly to changes. Regular scrum meetings ensure that team members are aligned and can discuss challenges and progress in real-time. This method promotes a dynamic work environment where the delivery of high-quality products is accelerated, and customer satisfaction is consistently prioritized. Adopting Agile has not only improved our project timelines but has also enhanced team morale and stakeholder engagement, making it an indispensable strategy in today's fast-paced work environments."
+      ]
+    }
+  ]
+}

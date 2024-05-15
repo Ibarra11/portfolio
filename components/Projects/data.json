@@ -1,6 +1,20 @@
 {
   "projects": [
     {
+      "title": "Central Valley News",
+      "detailPage": "/projects/central-valley-news",
+      "img": "/central-valley-news.png",
+      "url": "https://central-valley-news.netlify.app/news",
+      "github": "https://github.com/Algorithm-Allies/valleyNews",
+      "description": "Central Valley News serves as a centralized hub for articles from multiple news publications providing a convenient and comprehensive source of news and information for users.",
+      "highlights": [
+        "I played a role in designing the architecture of the web scraper and establishing the cron job",
+        " collaborated within an agile development environment alongside a team of seven to construct this project in accordance with project specifications",
+        "I contributed to the frontend development team tasked with building the frontend using React"
+      ],
+      "display": true
+    },
+    {
       "title": "Frontend Quiz",
       "detailPage": "/projects/frontend-quiz",
       "img": "/frontend-quiz.png",
@@ -11,7 +25,8 @@
         "Quiz attempts are recorded and average is displayed for each quiz",
         "Confetti animation for scores greater than 80%",
         "A 30 second time limit for each question"
-      ]
+      ],
+      "display": true
     },
     {
       "title": "MovieSpot",
@@ -24,7 +39,8 @@
         "Authentication System using Bcrypt and Iron Session",
         "End to end type safety with GraphQL",
         "Protected Routes"
-      ]
+      ],
+      "display": false
     },
     {
       "title": "Audiophile",
@@ -37,7 +53,8 @@
         "Shopping Cart",
         "Checkout Process ",
         "Page animations using Framer Motion"
-      ]
+      ],
+      "display": true
     },
     {
       "title": "Where in the world",
@@ -46,7 +63,8 @@
       "url": "https://rest-countries-hgak.vercel.app/",
       "github": "https://github.com/Ibarra11/Rest_Countries",
       "description": "Where in the world displays information about all the countries in the world provided by the REST countries API.",
-      "highlights": ["Next.js 13", "Server Components", "Dark/Light Mode"]
+      "highlights": ["Next.js 13", "Server Components", "Dark/Light Mode"],
+      "display": false
     }
   ]
 }

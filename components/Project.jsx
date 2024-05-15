@@ -20,20 +20,20 @@ export default function Project({
   img,
 }) {
   return (
-    <div className="relative flex flex-col gap-6  lg:flex-row lg:gap-9 items-start">
+    <>
       <motion.div
         variants={variants}
         whileInView="visible"
         initial="hidden"
         viewport={{ amount: 0.4, once: true }}
         transition={{ duration: 0.4 }}
-        className="w-full sm:w-3/4 order-1 text-center lg:text-left lg:order-none mx-auto  lg:w-[400px]   "
+        className="w-full sm:w-3/4 order-1 text-center lg:text-left lg:order-none mx-auto lg:w-[400px]"
       >
         <div className="mb-6 space-y-2 lg:space-y-4 lg:mb-4 ">
           <h3 className="text-xl lg:text-3xl  text-white">{title}</h3>
           <p className=" text-light-grey  text-base">{description}</p>
         </div>
-        <div className="hidden lg:block space-y-2 md:mb-6">
+        {/* <div className="hidden lg:block space-y-2 md:mb-6">
           <h4 className="text-white text-base lg:text-xl">Highlights</h4>
           <ul className="space-y-1 md:block text-light-grey mb-4">
             {highlights.map((highlight, i) => (
@@ -46,7 +46,7 @@ export default function Project({
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         <div className="flex justify-center lg:justify-start gap-2 lg:gap-4">
           <Link
             className={clsx(
@@ -99,6 +99,6 @@ export default function Project({
           className=" object-cover object-top w-full h-full"
         />
       </motion.div>
-    </div>
+    </>
   );
 }
