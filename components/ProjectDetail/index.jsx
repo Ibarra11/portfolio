@@ -1,10 +1,8 @@
 "use client";
-import Head from "next/head";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import clsx from "clsx";
 
-import { FiGithub, FiGlobe, FiArrowLeft } from "react-icons/fi";
+import { FiGithub, FiGlobe } from "react-icons/fi";
 
 export default function ProjectDetail({
   title,
@@ -15,22 +13,8 @@ export default function ProjectDetail({
   stack,
   learned,
 }) {
-  const router = useRouter();
-
   return (
     <article className="max-w-4xl mx-auto">
-      <button
-        className="group flex items-center gap-2 text-slate-300 mb-4 outline-none focus:ring-2 focus:ring-light-emerald"
-        onClick={() => router.back()}
-      >
-        <FiArrowLeft
-          className="group-hover:-translate-x-2 transition-transform"
-          size={16}
-        />
-        <span className=" group-hover:underline group-hover:underline-offset-4 group-hover:decoration-light-emerald">
-          Go Back
-        </span>
-      </button>
       <div>
         <div className="relative h-52  md:h-96 shadow-lg">
           <Image

@@ -79,8 +79,8 @@ export default function About() {
               Get to Know Me
             </h3>
             <p className="text-base lg:text-lg text-dark-grey mb-2">
-              Hello! I'm Alan Ibarra. As a Software Developer, my passion lies
-              in creating interactive, accessible, and type-safe web
+              Hello! I&lsquo;m Alan Ibarra. As a Software Developer, my passion
+              lies in creating interactive, accessible, and type-safe web
               applications. My technical toolkit is rich with advanced skills in
               JavaScript, React, TypeScript, and HTML/CSS. I am committed to
               continuous learning, ensuring my work remains at the cutting edge
@@ -88,15 +88,11 @@ export default function About() {
               experiences.
             </p>
             <p className="text-base lg:text-lg text-dark-grey">
-              I graduated with a Bachelor’s degree in Computer Science from CSU
-              Stanislaus in 2018, and I am proud to be a first-generation
-              college graduate. Outside of my professional endeavors, I keep
-              active with weightlifting and enjoy expanding my view of the world
-              by watching documentaries. --- This version maintains the essence
-              of your original text while streamlining some of the information
-              for better flow and impact. If you have specific preferences or
-              additional details you'd like to incorporate, feel free to let me
-              know!
+              I graduated with a Bachelor&lsquo;s degree in Computer Science
+              from CSU Stanislaus in 2018, and I am proud to be a
+              first-generation college graduate. Outside of my professional
+              endeavors, I keep active with weightlifting and enjoy expanding my
+              view of the world by watching documentaries.
             </p>
           </div>
           <div className={clsx("col-span-4 text-gray-700", "lg:col-span-2")}>
