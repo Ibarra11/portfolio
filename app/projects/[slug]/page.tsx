@@ -25,10 +25,15 @@ export async function generateMetadata({ params }) {
   };
 }
 
+/* 
+  Essentially its just 100vh - footer.height.  I don't have to worry about navbar because it is fixed
+  min-h-[calc(100vh-theme(space.16))]
+*/
+
 async function ProjectPage({ params }: { params: { slug: string } }) {
   const content = getContent(params.slug);
   return (
-    <main className=" bg-slate-800 pt-32 px-6">
+    <main className="bg-slate-800 pt-32 px-6  min-h-[calc(100vh-theme(space.16))]">
       <ProjectDetail {...content} />;
     </main>
   );
