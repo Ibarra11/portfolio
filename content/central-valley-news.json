@@ -15,7 +15,13 @@
     {
       "title": "Agile Methodology",
       "content": [
-        "Working with Agile methodology has fundamentally transformed my approach to project management and team collaboration. Agile emphasizes flexibility, continuous improvement, and the importance of feedback from all stakeholders. By breaking down projects into manageable units called sprints, teams are able to tackle complex tasks more efficiently and adapt quickly to changes. Regular scrum meetings ensure that team members are aligned and can discuss challenges and progress in real-time. This method promotes a dynamic work environment where the delivery of high-quality products is accelerated, and customer satisfaction is consistently prioritized. Adopting Agile has not only improved our project timelines but has also enhanced team morale and stakeholder engagement, making it an indispensable strategy in today's fast-paced work environments."
+        "Working with Agile methodology has fundamentally transformed my approach to project management and team collaboration. Agile emphasizes flexibility, continuous improvement, and the importance of feedback from all members. By breaking down projects into manageable units called sprints, we were  able to tackle complex tasks more efficiently and adapt quickly to changes. Regular  meetings ensured that team members wre aligned and can discuss challenges and progress in real-time"
+      ]
+    },
+    {
+      "title": "User Interface",
+      "content": [
+        "I played a pivotal role in crafting the user interface for this project using React's component-based architecture. Working closely with team members, I contributed to the development of interactive and dynamic UI components that elevated user experiences. Simultaneously, I collaborted with team members in utilizing Figma to translate conceptual ideas into  UI/UX designs. Through this collaborative effort, we delivered intuitive applications that seamlessly blend functionality with aesthetic appeal, ensuring alignment with user expectations and project goals."
       ]
     }
   ]
